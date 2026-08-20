@@ -17,6 +17,40 @@ is part of the product. Branching has the better diff.
 fill in the header. The prompt version matters: a log you can't tie to a commit
 is an anecdote.
 
+**Do all of that before the session exists.** Don't open a session and ask it to
+make the branch. The first message sets the frame the run is measuring: opening
+with repo administration primes exactly the software-agent stance whose
+influence you're trying to observe, and it spends the opening of the transcript
+on git. It also makes the `/context` baseline meaningless, since it gets taken
+after the model has already been thinking about branches. And for a
+cut-and-compare run it simply doesn't work — the trimmed prompt has to be on the
+branch *before* startup, because startup is when it loads.
+
+Don't change the repository's default branch to point at a playtest either. It's
+global, it affects anyone forking while it's set, and forgetting to put it back
+means the next development session branches from a playtest.
+
+**Expect the session to push somewhere else.** The hosted harness assigns each
+session its own branch. `playtest/NN` is the base the session starts from; the
+notes will land on a child branch it creates. Record that name in the log header
+— the diff is against whatever it actually pushed, not against the base you
+picked.
+
+## Keep the opening message fixed
+
+Write the first message once, per scope, and reuse it verbatim across runs.
+
+This matters more than it looks. The opening is the largest single input you
+control, and a run that opened with "let's play Starfinder, I want a mystery
+about a missing freighter" is not comparable to one that opened with "Starfinder
+from character creation." If the opening drifts between runs, you cannot tell
+whether a difference came from the prompt change you were testing or from what
+you happened to type. You would be A/B testing two variables and reading the
+result as one.
+
+Record the exact opening in the log header. When you deliberately change scope,
+that's a new scope with its own fixed opening, not a variation on the old one.
+
 **Run it where you'll actually play.** If the product is something you talk to
 from a phone, test on the phone. A local CLI run is cleaner in the sense that
 it isolates the prompt, and worse in the sense that it tests a configuration

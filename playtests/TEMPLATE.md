@@ -6,6 +6,8 @@
 - **Where it ran:** <web / desktop app / phone / local CLI>
 - **Prompt version:** <commit sha of CLAUDE.md and the rules>
 - **Context at session start:** <the memory-file total from `/context`>
+- **Base branch / branch actually pushed to:**
+- **Opening message, verbatim:**
 
 ## Intended scope
 
