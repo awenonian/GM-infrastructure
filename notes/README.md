@@ -17,6 +17,7 @@ notes/
   gm/               your journal. Nobody else reads it. Hide nothing from yourself.
     STATE.md        the truth behind the ledger — secrets, clocks, offscreen movement
     THREADS.md      every open loop and its status. Nothing ambiguous.
+    CLUES.md        the mystery as a graph: revelations, who knows what
     characters/     one file per recurring character: VOICE, INTENTION, positions
     plans/          campaign plan, session plans, scene plans
 ```
@@ -31,6 +32,8 @@ notes/
 | A line a character actually said | the character's file, verbatim, under VOICE |
 | What a character wants, or would never do | the character's file, under INTENTION |
 | A question raised and not yet answered | `gm/THREADS.md`, marked open |
+| A clue, or a conclusion it points at | `gm/CLUES.md` |
+| A fact that's true but not yet revealed | `gm/CLUES.md`, under loose clues |
 | Something you decided about the world | `gm/STATE.md` — and if it hasn't reached play yet, say so |
 | A thing you intend to happen | `gm/plans/` |
 

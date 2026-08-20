@@ -5,121 +5,128 @@ technique from that document and what we did with it.
 
 Status vocabulary:
 
-- **encoded** — it's in `CLAUDE.md` or the `notes/` scaffolding; the "where"
-  column says where.
+- **encoded** — it's in `CLAUDE.md`; the "where" column says which section.
 - **scaffolded** — it exists as a file, template, or script rather than as a
   prompt clause.
 - **pending** — agreed in principle, not yet built.
-- **needs decision** — blocked on a stance in `stances.md`.
 - **rejected** — deliberately not doing it; the "where" column says why. A
   rejection is a decision and is worth as much as an adoption.
 
 Nothing gets silently dropped. If a row leaves this table it's because it moved
 to "encoded" and the text it became is findable.
 
+Where a row says "stance", the reasoning is in `stances.md`, not here.
+
 ## The anti-sycophancy spine (manual: Stage 1, §d, §g)
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Over-compliance is the dominant AI-GM failure mode; weight the prompt toward it | pending | |
-| Resolve mechanics before narrating outcome | pending | |
-| Fixed machine-readable output block each turn | needs decision | Clashes with the prose register the current prompt is written in |
-| Forbid auto-success; failure must be possible and consequential | pending | |
-| Adjudicate against game state regardless of how well the player argues (pseudo-logic is the documented attack vector) | pending | |
-| Don't confirm player theories or hand over clue interpretations | pending | |
-| Redirect in-world (information / consequence / NPC), never bare denial | pending | Best-sourced AI-specific finding in the manual |
-| "Yes, but / no, and" over unconditional "yes, and" | pending | |
+| Over-compliance is the dominant AI-GM failure mode; weight the prompt toward it | encoded | §Adjudication → The failure mode. Section is front-loaded and opens by naming the drift, per the manual's note that buried rules get lost |
+| Resolve mechanics before narrating outcome | encoded | §Roll before you narrate |
+| Fixed machine-readable output block each turn | rejected | Stance 5. Requirement kept, format replaced by the visible `roll.py` call — a block is written by the same pass that chose the outcome and can be back-filled; a tool call can't |
+| Forbid auto-success; failure must be possible and consequential | encoded | §Only roll when it matters; §Failure, by domain |
+| Adjudicate against game state regardless of how well the player argues | encoded | §A good argument is not a success. The manual's dominant attack vector, so it gets its own heading |
+| Don't confirm player theories or hand over clue interpretations | encoded | §Mysteries → Then stop. Includes the tell — warming to a right guess, going quiet on a wrong one |
+| Redirect in-world (information / consequence / NPC), never bare denial | encoded | §Never a bare "no" |
+| "Yes, but / no, and" over unconditional "yes, and" | encoded | §And never an unconditional "yes" |
 
 ## Prep and planning (manual: §a, §j, Stage 5)
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Prep situations, not plots | needs decision | |
-| Goal-oriented opponents with a timeline of what they do unopposed | needs decision | |
-| Lazy DM eight-step prep checklist | needs decision | |
-| ~10 reusable secrets and clues as improvisation fuel | needs decision | |
-| Carry unrevealed secrets forward between sessions | pending | |
-| Advance offscreen clocks between sessions | pending | |
-| Prep is stickier than conversation; the plan bends to play | encoded | `CLAUDE.md` §Planning — predates the manual, agrees with it |
+| Prep situations, not plots | encoded | §Planning |
+| Goal-oriented opponents with a timeline of what they do unopposed | encoded | §Planning — what each party wants, does this week unopposed, and would never do |
+| Rebuild prep when play contradicts it, rather than drifting | encoded | §When the plan breaks. Stance 1 — this is where we depart from the improv camp |
+| Lazy DM eight-step prep checklist | rejected | As a checklist it's system-specific (steps 7–8 assume D&D-likes). The transferable steps are encoded separately: secrets and clues, NPC goals, locations |
+| ~10 reusable secrets and clues as improvisation fuel | encoded | §Planning; `notes/gm/CLUES.md` → Loose clues |
+| Carry unrevealed secrets forward between sessions | encoded | §Planning; CLUES.md status vocabulary distinguishes undelivered from spent |
+| Advance offscreen clocks between sessions | encoded | §The world and the people in it; clocks table in `notes/gm/STATE.md` |
+| Prep is stickier than conversation; the plan bends to play | encoded | §When the plan breaks — predates the manual, agrees with it |
+| Strong start — open on a problem or a choice | pending | |
 
 ## Mysteries and information (manual: §h, Stage 2)
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Three Clue Rule — three clues per conclusion | pending | |
-| Inverted Three Clue Rule — any three clues yield a conclusion | pending | |
-| Node-based scenario design with a revelation list | pending | Manual calls this the most directly implementable piece of the canon |
-| GUMSHOE: never gate a *core* clue behind a roll | pending | |
-| Track who knows / believes / lies about what | pending | Partly served by `notes/gm/characters/` |
-| Facts are not clues; leave inference to the player | pending | |
+| Three Clue Rule — three clues per conclusion | encoded | §Mysteries; enforced by the revelation table in `notes/gm/CLUES.md` |
+| GUMSHOE: never gate a *core* clue behind a roll | encoded | §Mysteries; CLUES.md marks each clue core or not |
+| Node-based scenario design with a revelation list | scaffolded | `notes/gm/CLUES.md` |
+| Track who knows / believes / lies about what | scaffolded | CLUES.md table, and a per-person block in `notes/gm/characters/TEMPLATE.md` |
+| Facts are not clues; leave inference to the player | encoded | §Mysteries → Then stop |
+| Move information toward those who can act on it | encoded | §Getting information to them |
+| Inverted Three Clue Rule — any three clues yield a conclusion | pending | Currently implicit in the graph structure; not stated as a design instruction |
 
 ## Scene craft and pacing (manual: §c, §e)
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Cut to the interesting part; frame late, leave early | pending | |
-| Strong start — open on a problem or choice | pending | |
-| Address the character, not the player | pending | |
-| Hope/fear beat oscillation (Laws) | pending | |
-| Don't resolve stakes too fast | pending | |
-| Clocks as a pacing and consequence device | pending | |
-| End sessions on a hook or unresolved beat | pending | |
+| Cut to the interesting part; frame late, leave early | encoded | §Scenes |
+| Frame the expected scene, then check whether it holds | encoded | §Scenes; `oracle.py scene` |
+| Address the character, not the player | encoded | §Scenes |
+| Describe to the senses | encoded | §Scenes |
+| Don't resolve stakes too fast | encoded | §Scenes |
+| Clocks as a pacing and consequence device | scaffolded | `notes/gm/STATE.md` clocks table; referenced from §Scenes and §Adjudication |
+| End sessions on a hook or unresolved beat | encoded | §Scenes |
+| Hope/fear beat oscillation (Laws) | pending | Wants a tracking mechanism to be more than a slogan |
 | Infer and adapt to the player's evident preferences (Laws' player types) | pending | |
-| Reading the room / body language / physical staging | rejected | Doesn't transfer. The manual flags this itself; substitute is explicit check-ins |
+| Reading the room / body language / physical staging | rejected | Doesn't transfer; the manual flags this itself. Substitute is the explicit check-ins in §Safety |
 
 ## Adjudication (manual: §d)
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Roll only when the outcome is uncertain and both branches are interesting | pending | |
-| State stakes, position, and effect before the roll | pending | The single most mechanical guard against flattering post-hoc outcomes |
-| Rulings, not rules; then apply the ruling consistently | pending | |
-| Fail forward — failure changes the situation rather than stalling it | needs decision | |
-| Devil's Bargains | pending | |
-| Telegraph danger before it can kill | needs decision | |
-| Let a clever plan work; don't buff opposition to save a planned fight | pending | |
-| Advance a clock rather than forcing a choice under analysis paralysis | pending | |
+| Roll only when the outcome is uncertain and both branches are interesting | encoded | §Only roll when it matters |
+| State stakes and consequences before the roll | encoded | §Say what's at stake first |
+| Rulings, not rules; then apply the ruling consistently | encoded | §Rulings, not rules; rulings table in `notes/gm/STATE.md` so consistency survives the session boundary |
+| Fail forward — failure changes the situation rather than stalling it | encoded | §Failure, by domain. Stance 3 — applies to investigation and social play only |
+| Telegraph danger before it can kill | encoded | §Failure, by domain |
+| Let a clever plan work; don't buff opposition to save a planned fight | encoded | §Let them win when they've won |
+| Advance a clock rather than forcing a choice under analysis paralysis | encoded | §When the player stalls |
+| Devil's Bargains | pending | Needs a system-agnostic form — the bonus-die currency it trades in doesn't exist in every system |
+| Position and effect stated before the roll (BitD) | pending | Stakes-before-roll is encoded; the finer position/effect grading isn't, and may not port cleanly |
 
 ## NPCs and the world (manual: §f)
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Name everyone; everyone wants something | pending | Partly served by INTENTION in `notes/gm/characters/TEMPLATE.md` |
-| Think offscreen; factions pursue goals unobserved | pending | |
-| NPCs are competent but must not solve the player's problems | pending | Named as a recurring AI failure — over-helpful, therapeutic NPCs |
-| Distinct, consistent NPC voices | encoded | `CLAUDE.md` §Notes (VOICE) and `notes/gm/characters/TEMPLATE.md` |
+| Name everyone; everyone wants something | encoded | §The world and the people in it; INTENTION in `notes/gm/characters/TEMPLATE.md` |
+| Think offscreen; factions pursue goals unobserved | encoded | §The world and the people in it |
+| NPCs are competent but must not solve the player's problems | encoded | §The world and the people in it — framed as the same sycophancy in a costume, since that's how it gets back in after the dice are guarded |
+| Nobody explains the whole situation as they see it | encoded | §The world and the people in it; §Tone — predates the manual |
+| Distinct, consistent NPC voices | encoded | §Notes (VOICE); `notes/gm/characters/TEMPLATE.md` |
 
 ## Continuity (manual: §i, Stage 2)
 
 | Claim | Status | Where / why |
 |---|---|---|
 | External state is the source of truth, not model memory | scaffolded | The whole `notes/` tree is this |
-| Re-anchor canon at session open (the AI's reason to recap differs from a human's) | encoded | `CLAUDE.md` §Starting up |
-| Just-in-time rule injection rather than parametric recall | scaffolded | Rules skills, per `CLAUDE.md` §Starting up |
-| Retconning policy decided in advance | pending | Interacts with the recap-reconciliation rules already in `CLAUDE.md` |
+| Re-anchor canon at session open (the AI's reason to recap differs from a human's) | encoded | §Starting up |
+| Just-in-time rule injection rather than parametric recall | scaffolded | Rules skills, per §Starting up |
+| Retconning policy decided in advance | pending | Partly served by the recap-reconciliation rules in §Starting up, which resolve player-vs-notes but not notes-vs-notes |
 
 ## Solo play and surprise (manual: Stage 4)
 
 | Claim | Status | Where / why |
 |---|---|---|
-| A single intelligence on both sides collapses into wish-fulfilment (Czege Principle) | pending | |
-| An oracle the GM must consult and cannot rationalise away | pending | Wants to be a script, not a prompt clause |
-| Chaos factor tuning how often the unexpected intrudes | pending | |
-| Scene check: expected scene → altered / interrupted | pending | |
+| A single intelligence on both sides collapses into wish-fulfilment (Czege) | encoded | §The oracle |
+| An oracle the GM must consult and cannot rationalise away | scaffolded | `scripts/oracle.py ask`; §The oracle forbids re-rolling and reinterpreting |
+| Chaos factor tuning how often the unexpected intrudes | scaffolded | `oracle.py --chaos`; stored in `notes/gm/STATE.md` |
+| Scene check: expected scene → altered / interrupted | scaffolded | `oracle.py scene` |
+| Random events with a focus and a word pair to read | scaffolded | `oracle.py event`; also fires on doubles inside the chaos factor during `ask` |
 
 ## Safety (manual: §k)
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Lines and veils, negotiated before play | pending | |
-| X-card as an always-available explicit command | pending | Must be a command; the GM can't read discomfort |
-| Script change — rewind / pause / fast-forward | pending | Manual notes an AI can literally re-narrate |
-| Explicit out-of-character check-in channel | pending | |
+| Lines and veils, negotiated before play | encoded | §Safety; recorded in `notes/gm/plans/CAMPAIGN.md` |
+| X-card as an always-available explicit command | encoded | §Safety — obeyed immediately, no explanation asked, and the GM must announce it exists |
+| Script change — rewind / pause / fast-forward | encoded | §Safety, folded into the same clause |
+| Explicit out-of-character check-in channel | encoded | §Safety |
 
 ## Architecture (manual: Stage 6)
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Prefer one strong GM prompt with tool-grounded state | pending | |
-| LLM committees that critique each other measurably degrade correctness | pending | Argues against a subagent-reviewer design |
-| At most one narrow, well-scoped adjudication check | pending | |
+| Prefer one strong GM prompt with tool-grounded state | encoded | The design: one `CLAUDE.md`, state in `notes/`, mechanics in scripts |
+| LLM committees that critique each other measurably degrade correctness | rejected as a design | No reviewer subagents. The manual's own evidence (rule violations 1.32 → 3.26) argues against them |
+| At most one narrow, well-scoped adjudication check | encoded | `roll.py` and `oracle.py` are that check, and they aren't LLMs — so they can't degrade a correct output the way the reviewer agents did |

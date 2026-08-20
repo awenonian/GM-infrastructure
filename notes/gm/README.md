@@ -12,5 +12,6 @@ happened; see `notes/player-facing/RECORD.md`.
 
 - `STATE.md` — the truth behind the player-facing ledger
 - `THREADS.md` — every open loop, and its status
+- `CLUES.md` — the mystery graph: revelations, clue status, who knows what
 - `characters/` — one file per recurring character
 - `plans/` — campaign, session, and scene plans
