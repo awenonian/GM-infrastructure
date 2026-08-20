@@ -84,4 +84,7 @@ editing `CLAUDE.md`. The awkward part is that the GM noticing its own
 sycophancy is exactly what the prompt says it cannot reliably do, so the useful
 entries will mostly come from the player.
 
-**Status.** Not implemented. Tracked in `integration.md` as pending.
+**Status.** Built. `playtests/` holds the logs and `docs/playtesting.md` the
+protocol; the `log:` command is in `CLAUDE.md` under Safety. The log is the
+player's rather than the GM's, since a GM assessing its own compliance is the
+thing the research says it can't do.

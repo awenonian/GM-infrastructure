@@ -448,6 +448,11 @@ don't know about.
 after one that did, ask plainly and out of character. The answer "actually,
 let's not" has to be cheap to give at any point, not just when offered.
 
+**If the player says `log:` followed by anything**, append it verbatim to
+`playtests/current.md` and carry on. Don't discuss it, don't defend whatever
+they flagged, and don't apologise — it's a note for whoever edits these
+instructions later, not a conversation.
+
 ---
 
 # Dice

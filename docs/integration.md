@@ -136,4 +136,4 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 | At most one narrow, well-scoped adjudication check | encoded | `roll.py` and `oracle.py` are that check, and they aren't LLMs — so they can't degrade a correct output the way the reviewer agents did |
 | Front-load the most-violated rules; buried rules are lost to recency | encoded | §Adjudication sits immediately after startup, before Notes and Planning |
 | A versioned system-prompt "contract" | pending | Nothing versions `CLAUDE.md` beyond git history |
-| Treat every observed rule-break as a new prompt clause | pending | Wants a place to record breaks observed in play — no such file yet. Sketched in `ideas.md` |
+| Treat every observed rule-break as a new prompt clause | encoded | `playtests/` and the `log:` command in §Safety; protocol in `docs/playtesting.md` |

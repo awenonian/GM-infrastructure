@@ -17,6 +17,7 @@ GM that read it mid-session would take it for orders.
 | `integration.md` | The working tracker: what from `research/` has been encoded, rejected, or is still pending, and where it landed. |
 | `stances.md` | Decisions on the axes where the sources genuinely disagree, with reasons. |
 | `ideas.md` | Agreed or promising, not built. Ideas from noticing things rather than from the research. |
+| `playtesting.md` | How to run a playtest and what to do with the result. The logs themselves live in `playtests/`, outside `docs/`, so a GM writing one mid-game doesn't load these development instructions. |
 
 ## How the two jobs stay apart
 
