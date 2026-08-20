@@ -120,6 +120,51 @@ The oracle (`scripts/oracle.py`) works the same way and for the same reason.
 *Sources:* Amento (roll-before-outcome; enforced machine-readable output).
 Requirement adopted, format replaced.
 
+## 6. What lives in the always-loaded prompt → **whatever fires when no file is open**
+
+`CLAUDE.md` loads in full every session and the documentation is explicit that
+longer files reduce adherence. So there is a budget, and it needs a principle
+for spending it. The obvious one — keep the important things, move the rest —
+is wrong, and expensively so: it would move note-keeping discipline out on the
+grounds that adjudication matters more, when both matter and they fail
+differently.
+
+The right question is not how important a rule is. It is **whether the rule
+fires while a file is open.**
+
+Path-scoped rules in `.claude/rules/` load when Claude reads a matching file,
+and reload every time it reads one again — including after a compaction that
+dropped them. That makes them *more* reliable than root `CLAUDE.md` for
+anything attached to a file, not less. What they cannot do is fire when no file
+is being touched, and the whole anti-sycophancy spine fires exactly there: in
+the middle of writing prose, with no read to trigger anything.
+
+So:
+
+| Section | Where | Because |
+|---|---|---|
+| Starting up | `CLAUDE.md` | Runs before any file has been opened |
+| Adjudication | `CLAUDE.md` | Fires mid-narration; the highest-value section and the one with no file to hang on |
+| The oracle | `CLAUDE.md` | Fires when framing, not when writing anything down |
+| Scenes | `CLAUDE.md` | Fires mid-narration |
+| Mysteries → withholding | `CLAUDE.md` | Fires in the sentence where the player asks if they've got it |
+| The world and its people | `CLAUDE.md` | Fires whenever an NPC speaks |
+| Tone | `CLAUDE.md` | Fires in every line of prose |
+| Safety | `CLAUDE.md` | Must be live at any moment, including one where nothing is being read |
+| Notes → taxonomy and craft | `rules/notes.md` | Fires while writing a note, with the note open |
+| Prep → craft, clue graphs, re-prep | `rules/prep.md` | Fires with a plan or `CLUES.md` open |
+
+Three note-keeping rules stayed in `CLAUDE.md` against that split, and the
+exception is the principle working rather than failing: *write small bits as
+you go*, *after every scene ask who took a position*, and *you are writing for
+a different author* all fire during play, when no notes file is necessarily
+open. They are triggers. What they trigger is in the rule.
+
+**The failure this guards against** is moving something out because the file is
+long, and discovering three sessions later that it only ever mattered at a
+moment when nothing was open. If you cannot name the file whose reading should
+load a rule, it belongs in `CLAUDE.md`.
+
 ---
 
 ## Revisiting these

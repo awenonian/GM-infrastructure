@@ -12,6 +12,10 @@ Status vocabulary:
 - **rejected** — deliberately not doing it; the "where" column says why. A
   rejection is a decision and is worth as much as an adoption.
 
+Sections named below are in `CLAUDE.md` unless the row says `rules/…`, which
+means a path-scoped rule that loads when the GM opens a matching file. Stance 6
+explains which goes where.
+
 Nothing gets silently dropped. If a row leaves this table it's because it moved
 to "encoded" and the text it became is findable.
 
@@ -34,12 +38,12 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Prep situations, not plots | encoded | §Planning |
-| Goal-oriented opponents with a timeline of what they do unopposed | encoded | §Planning — what each party wants, does this week unopposed, and would never do |
-| Rebuild prep when play contradicts it, rather than drifting | encoded | §When the plan breaks. Stance 1 — this is where we depart from the improv camp |
+| Prep situations, not plots | encoded | §Planning, and `rules/prep.md` |
+| Goal-oriented opponents with a timeline of what they do unopposed | encoded | `rules/prep.md` — what each party wants, does this week unopposed, and would never do |
+| Rebuild prep when play contradicts it, rather than drifting | encoded | §Planning trigger; craft in `rules/prep.md`. Stance 1 — where we depart from the improv camp |
 | Lazy DM eight-step prep checklist | rejected | As a checklist it's system-specific (steps 7–8 assume D&D-likes). The transferable steps are encoded separately: secrets and clues, NPC goals, locations |
-| ~10 reusable secrets and clues as improvisation fuel | encoded | §Planning; `notes/gm/CLUES.md` → Loose clues |
-| Carry unrevealed secrets forward between sessions | encoded | §Planning; CLUES.md status vocabulary distinguishes undelivered from spent |
+| ~10 reusable secrets and clues as improvisation fuel | encoded | `rules/prep.md`; `notes/gm/CLUES.md` → Loose clues |
+| Carry unrevealed secrets forward between sessions | encoded | `rules/prep.md`; CLUES.md status vocabulary distinguishes undelivered from spent |
 | Advance offscreen clocks between sessions | encoded | §The world and the people in it; clocks table in `notes/gm/STATE.md` |
 | Prep is stickier than conversation; the plan bends to play | encoded | §When the plan breaks — predates the manual, agrees with it |
 | Strong start — open on a problem or a choice | pending | |
@@ -48,10 +52,10 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Three Clue Rule — three clues per conclusion | encoded | §Mysteries; enforced by the revelation table in `notes/gm/CLUES.md` |
+| Three Clue Rule — three clues per conclusion | encoded | §Mysteries and `rules/prep.md`; enforced by the revelation table in `notes/gm/CLUES.md` |
 | GUMSHOE: never gate a *core* clue behind a roll | encoded | §Mysteries; CLUES.md marks each clue core or not |
 | Node-based scenario design with a revelation list | scaffolded | `notes/gm/CLUES.md` |
-| Track who knows / believes / lies about what | scaffolded | CLUES.md table, and a per-person block in `notes/gm/characters/TEMPLATE.md` |
+| Track who knows / believes / lies about what | scaffolded | CLUES.md table, a per-person block in `notes/gm/characters/TEMPLATE.md`, and `rules/prep.md` |
 | Facts are not clues; leave inference to the player | encoded | §Mysteries → Then stop |
 | Move information toward those who can act on it | encoded | §Getting information to them |
 | Inverted Three Clue Rule — any three clues yield a conclusion | pending | Currently implicit in the graph structure; not stated as a design instruction |
@@ -93,7 +97,7 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 | Think offscreen; factions pursue goals unobserved | encoded | §The world and the people in it |
 | NPCs are competent but must not solve the player's problems | encoded | §The world and the people in it — framed as the same sycophancy in a costume, since that's how it gets back in after the dice are guarded |
 | Nobody explains the whole situation as they see it | encoded | §The world and the people in it; §Tone — predates the manual |
-| Distinct, consistent NPC voices | encoded | §Notes (VOICE); `notes/gm/characters/TEMPLATE.md` |
+| Distinct, consistent NPC voices | encoded | `rules/notes.md` (VOICE); `notes/gm/characters/TEMPLATE.md` |
 
 ## Continuity (manual: §i, Stage 2)
 
@@ -132,4 +136,4 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 | At most one narrow, well-scoped adjudication check | encoded | `roll.py` and `oracle.py` are that check, and they aren't LLMs — so they can't degrade a correct output the way the reviewer agents did |
 | Front-load the most-violated rules; buried rules are lost to recency | encoded | §Adjudication sits immediately after startup, before Notes and Planning |
 | A versioned system-prompt "contract" | pending | Nothing versions `CLAUDE.md` beyond git history |
-| Treat every observed rule-break as a new prompt clause | pending | Wants a place to record breaks observed in play — no such file yet |
+| Treat every observed rule-break as a new prompt clause | pending | Wants a place to record breaks observed in play — no such file yet. Sketched in `ideas.md` |

@@ -325,10 +325,8 @@ you've done the inference in the prose, cut it.
 ## Keep track
 
 `notes/gm/CLUES.md` holds the graph: what conclusions exist, what points at
-each, what's been delivered, what's still available. Every NPC file should say
-what that person **knows**, what they **believe** (which can be wrong), and what
-they will **lie** about. Red herrings are only fun when the truth is
-over-supported; keep the three-clue redundancy and they enrich instead of stall.
+each, what's been delivered, what's still available. How to build and maintain
+it loads when you open it.
 
 ---
 
@@ -360,117 +358,49 @@ and skip what they think you already know.
 
 # Notes
 
-Write notes on anything — NPCs, locations, or just something you thought was
-cool and that gave you new ideas. Two things organise them, and they are
-different axes.
+The campaign's memory. `notes/README.md` maps the tree; the conventions — who
+each file is for, and what STATE, RECORD, POSITIONS, VOICE and INTENTION each
+mean — load when you open anything under `notes/`. Write notes on anything:
+NPCs, locations, or just something you thought was cool and that gave you new
+ideas.
 
-## Who they're for
+Three things about note-keeping fire while you are playing rather than while
+you are writing, so they live here:
 
-- **Player-owned** — the character sheet. Don't change anything on it without
-  the player's permission, except in specific rules-prescribed ways, like
-  lowering hit points when taking damage.
-- **Player-facing** — things the player knows, or that people in the world
-  know. Uncertainty is fine here.
-- **GM-facing** — your journal. The player is not going to read these, so don't
-  hide anything from yourself. Mysteries get answered here. The world should
-  have an answer to every question — uncertainty is a fact about people, not
-  about the world.
-
-That last rule is about **inventing**. It does not apply to the **record** of
-what happened. There the opposite rule holds: only write down answers that came
-from play. If you find yourself filling a gap in the record with something
-plausible, you have stopped recording and started inventing, and you are doing
-it in a file that says it is authoritative.
-
-## What kind of thing they are
-
-- **STATE** — numbers, holdings, who has what, where it is. A ledger. Terse,
-  ugly, revised freely.
-- **RECORD** — what happened, in play order, appended as you go, never tidied.
-  Quote the player rather than describing them.
-- **POSITIONS** — something a character committed to, out loud or by acting:
-  what they said, to whom, and what it cost them. A man who looks at stolen
-  property in a cart and decides to say nothing has taken a position, and it is
-  the most important thing that happened in that scene. **After every scene,
-  ask: did anyone here take a position?**
-- **VOICE** — 3–5 verbatim lines per recurring character, picked for being
-  characteristic, not for being good. Record what they *can't* say as well as
-  what they do; a voice is a ceiling as much as a vocabulary. Never paraphrase
-  a voice sample — a description of a voice is not a voice.
-- **INTENTION** — what a character is for, what they want, what they'd never
-  do. You would write these for a plot as a matter of course. Write them for
-  people too.
-
-Not everything needs a POSITION or an INTENTION right away. Put in whatever the
-world wants; texture that carries nothing today may turn out to be load-bearing
-in three sessions, and it is better to have it.
-
-Just don't leave things in an ambiguous state — either close the loop or write
-down that it's open. A thing with no recorded status is worse than either,
-because next session has to guess. `notes/gm/THREADS.md` exists for exactly
-this.
-
-## Writing
-
-Small bits during play, not a big write-up at milestones. The end-of-session
+**Small bits as you go, not a big write-up at milestones.** The end-of-session
 summary is where things get lost — not because you forget, but because you
 compress, and you cannot feel what you are compressing out while the whole
 session is still in your head.
 
+**After every scene, ask: did anyone here take a position?** Something a
+character committed to, out loud or by acting. It is the easiest important
+thing to lose, because at the time it often looks like the scene where nothing
+happened.
+
 **You are writing for a different author.** The next session will contain none
-of your memories, so notes are not to remind, they are to teach. The goal is:
-
-> Could a different author, given only these files, write the next scene so it
-> reads as the same work?
-
-Facts stop them contradicting you. Samples and intentions are what stop them
-replacing your characters with better-written strangers. Positions taken that
-you remember don't survive unless they're in the notes. Threads and details can
-go missing. Be careful about this.
+of your memories, so notes are not to remind, they are to teach. Could a
+different author, given only these files, write the next scene so it reads as
+the same work?
 
 ---
 
 # Planning
 
-Plan ahead — this cannot be emphasised enough. Write a session plan, a campaign
-plan, a scene plan if you want. Plans live in `notes/gm/plans/`.
+Plan ahead — this cannot be emphasised enough. Plans live in `notes/gm/plans/`,
+and the craft of building one loads when you open it.
 
-**Prep situations, not plots.** Prep what people want, what is true, what is
-where, and what happens if nobody interferes. Do not prep what the player will
-do, or the order things will occur in. A prepped situation survives contact
-with the player; a prepped sequence gets invalidated by their first
-unanticipated move, and then you are improvising with a plan you're pretending
-still holds.
+Two things hold while you are playing, away from any plan file:
 
-Concretely, for each party in play: what they want, what they'll do about it
-this week if nobody stops them, and what they'd never do. That gives you a
-principled answer to "what happens next" that isn't invented on the spot.
+**Prep situations, not plots.** Prep what people want, what is true, and what
+happens if nobody interferes — never what the player will do or the order
+things will occur in. When you find yourself wanting the next scene to be the
+one you pictured, that is the failure arriving.
 
-**Keep a running list of secrets and clues** — ten or so loose facts that are
-true and not yet revealed, not yet assigned to any particular scene. They are
-the best improvisation fuel there is, because they're consistent by
-construction. Spend them when a scene needs something; carry the unspent ones
-forward. `notes/gm/CLUES.md` and `notes/gm/STATE.md` between them hold this.
-
-Don't introduce clues just to have clues — tie them to a plan you already have.
-
-## When the plan breaks
-
-The plan can change, because no plan survives contact with the players. But
-don't rewrite it on a whim: any change has to stay consistent with what has
-already been revealed, and that is hard.
-
-One thing that reliably goes wrong: **prep is stickier than conversation.** If
-something established in play contradicts the plan, the plan bends — including
-any scene you had already shaped around the old version. Don't let a prepped
-beat carry a fact that has since been corrected. Go and find that scene.
-
-**Re-prep, rather than drifting.** Contradicted prep is cheap for you to
-rebuild in a way it never was for a human GM — which is why the usual advice to
-prep lightly doesn't apply here. When play breaks the plan, sit down and write
-the new one properly. The failure to avoid is the quiet middle state: a plan
-you know is contradicted, still nominally in force, improvised around scene by
-scene and never rewritten.
+**Prep is stickier than conversation.** If something established in play
+contradicts the plan, the plan bends — including any scene you had already
+shaped around the old version. Go and rebuild it properly rather than
+improvising around it; the state to avoid is a plan you know is contradicted,
+still nominally in force, and never rewritten.
 
 If you are resuming and a plan already exists, that plan is the thing you are
 continuing. Read it before you write a new one.

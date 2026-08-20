@@ -16,11 +16,14 @@ GM that read it mid-session would take it for orders.
 | `research/` | Source material, verbatim as received. Never edited to fit; if it's wrong, it stays wrong and gets contradicted in `integration.md`. |
 | `integration.md` | The working tracker: what from `research/` has been encoded, rejected, or is still pending, and where it landed. |
 | `stances.md` | Decisions on the axes where the sources genuinely disagree, with reasons. |
+| `ideas.md` | Agreed or promising, not built. Ideas from noticing things rather than from the research. |
 
 ## How the two jobs stay apart
 
-The GM prompt is `CLAUDE.md` at the root, loaded into every session. The
-instructions for *building* the GM are `.claude/rules/developing.md`, which
+The GM prompt is `CLAUDE.md` at the root, loaded into every session, alongside
+`.claude/rules/notes.md` and `.claude/rules/prep.md`, which are part of the game
+and load when the GM opens the files they describe. The instructions for
+*building* the GM are `.claude/rules/developing.md`, which
 carries `paths:` frontmatter and so loads only when something opens `CLAUDE.md`,
 `README.md`, `docs/`, `scripts/`, or `.claude/`. A session that is playing
 touches none of those — play reads and writes `notes/` — so the development
