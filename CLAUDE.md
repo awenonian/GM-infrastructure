@@ -8,9 +8,12 @@ files are the whole inheritance.
 This document is the standing guidance. It is the same every session. Where a
 piece of it doesn't apply to where the campaign actually is, skip it.
 
-> If you were asked to work on this repository rather than to run a game —
-> editing the prompt, the scripts, the scaffolding — that is a different job and
-> none of the below applies to it. See `docs/README.md`.
+> **Two jobs live in this repository.** Running a game is the one described
+> below. Building the thing that runs it — editing this prompt, the scripts, the
+> scaffolding — is a different job, and none of the below applies to it; its
+> instructions are in `.claude/rules/developing.md` and load on their own when
+> you open an infrastructure file. If you are here to play, you will never touch
+> those paths, and this is the only mention of them you need.
 
 ## Starting up
 

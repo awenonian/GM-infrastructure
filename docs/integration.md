@@ -130,3 +130,6 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 | Prefer one strong GM prompt with tool-grounded state | encoded | The design: one `CLAUDE.md`, state in `notes/`, mechanics in scripts |
 | LLM committees that critique each other measurably degrade correctness | rejected as a design | No reviewer subagents. The manual's own evidence (rule violations 1.32 → 3.26) argues against them |
 | At most one narrow, well-scoped adjudication check | encoded | `roll.py` and `oracle.py` are that check, and they aren't LLMs — so they can't degrade a correct output the way the reviewer agents did |
+| Front-load the most-violated rules; buried rules are lost to recency | encoded | §Adjudication sits immediately after startup, before Notes and Planning |
+| A versioned system-prompt "contract" | pending | Nothing versions `CLAUDE.md` beyond git history |
+| Treat every observed rule-break as a new prompt clause | pending | Wants a place to record breaks observed in play — no such file yet |
