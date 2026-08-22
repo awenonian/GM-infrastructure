@@ -7,15 +7,30 @@ it away.
 
 ## Setting up a run
 
-**Branch from `main`**, named `playtest/NN-short-name`. Playtests are disposable
-and never merge back; what merges back is the change you make to the prompt
-afterwards, on its own branch. Forking instead of branching is also fine, and
-has one advantage — it exercises the fork-and-play path a real user takes, which
-is part of the product. Branching has the better diff.
+**Fork, if you're starting the session from a phone.** The mobile client has no
+branch picker, so a branch-based playtest can't be started there at all. A fork
+is selectable like any other repository, it exercises the fork-and-play path a
+real user takes, and it gets its own auto-memory directory on any surface where
+memory persists. The cost is that the diff is across repositories rather than
+within one, which is a fetch away rather than a problem — see below.
 
-**Copy `playtests/TEMPLATE.md` to `playtests/current.md`** before you start, and
-fill in the header. The prompt version matters: a log you can't tie to a commit
-is an anecdote.
+**Branch from `main`** if you're starting from a desktop or the CLI, named
+`playtest/NN-short-name`. Better diff, no repository sprawl. Either way,
+playtests are disposable and never merge back; what merges back is the change
+you make to the prompt afterwards, on its own branch off `main`.
+
+Whichever you pick, keep it consistent across runs you intend to compare. A
+fork and a branch are not different enough to matter, but changing surface
+mid-comparison is one more variable you didn't mean to introduce.
+
+**Nothing has to be set up in the repository itself.** `playtests/current.md`
+ships ready to append to and the `log:` command is pre-approved in
+`.claude/settings.json`, so a fresh fork can be played from a phone with no
+preparation. Fill in the log header when you can; blank fields are
+reconstructible from git afterwards and are not worth delaying a session over.
+
+The one thing worth capturing in the moment is the **prompt version** — the
+commit the fork was taken at. A log you can't tie to a commit is an anecdote.
 
 **Do all of that before the session exists.** Don't open a session and ask it to
 make the branch. The first message sets the frame the run is measuring: opening
@@ -87,6 +102,22 @@ Short and broad beats long and deep. One run should touch:
 
 A three-hour dungeon crawl exercises one section repeatedly and tells you very
 little. Four scenes across four kinds of play tells you a lot.
+
+## Comparing two runs across forks
+
+Forks share history with the upstream repository, so a diff between them is a
+fetch, not an export. From a checkout of one:
+
+```
+git remote add other https://github.com/<owner>/<other-fork>.git
+git fetch other
+git diff main other/main -- notes/
+```
+
+In a development session with both repositories loaded, do the same from
+whichever clone you're standing in. To compare a run against the unplayed
+template, diff it against upstream `main` — that shows the whole campaign as
+one changeset, which is the clearest view of what a session actually produced.
 
 ## Reading a finished run
 

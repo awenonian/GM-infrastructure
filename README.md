@@ -23,8 +23,23 @@ week reads the notes and picks up where you left off.
    information the notes structurally can't hold, and the GM is told to trust
    it over its own notes where the two disagree.
 
-That's the whole ritual. Everything else is in `CLAUDE.md`, which Claude Code
-loads automatically.
+That's the whole ritual — there is no setup step. A fresh fork is playable as
+cloned, including from a phone: the dice and oracle are pre-approved, and the
+notes the GM needs are already scaffolded.
+
+Everything else is in `CLAUDE.md`, which Claude Code loads automatically.
+
+## Telling it something went wrong
+
+Say `log:` followed by anything, out of character, at any point:
+
+> `log: you confirmed my theory about the sister`
+
+It gets written down verbatim and play carries on — no discussion, no defending
+the thing you flagged. That's a note for whoever edits the GM's instructions
+later, and it's the only way the prompt gets improved from evidence rather than
+from theory. `playtests/` explains the rest; delete it from a fork that's only
+playing.
 
 ## What's here
 
