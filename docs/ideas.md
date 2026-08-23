@@ -88,3 +88,50 @@ entries will mostly come from the player.
 protocol; the `log:` command is in `CLAUDE.md` under Safety. The log is the
 player's rather than the GM's, since a GM assessing its own compliance is the
 thing the research says it can't do.
+
+---
+
+## A visible session zero
+
+**The idea.** Character creation and the initial worldbuilding happen as an
+explicit collaborative mode, out in the open, with player input — before the
+first session of play proper.
+
+**Why stance 1 wants it.** The world-resolution rule says the GM answers every
+established question definitely. Done entirely in private before session one,
+that produces a fully-realised setting the player had no hand in, and the
+proactive style the player prefers runs on the player having stakes,
+connections, and wants that the world can push against. Those can't be
+prepped for them.
+
+**The argument that makes it more than taste:** a world the player helped build
+is a world the player *remembers*. That is a second store for the setting layer,
+outside the notes and outside the context window — and the recap protocol
+already makes the player authoritative where they disagree with the notes.
+Session zero extends that authority from events to the setting, which is
+precisely the layer the resolution rule is trying to hold consistent. The
+player stops being only a source of recap and becomes an error-check on drift.
+
+**Why it's a separate mode, not a first scene.** Almost none of the standing
+prompt applies. No adjudication, no oracle, no withholding of interpretation, no
+scene framing, no dice. It is collaborative document authoring with a person.
+That makes it the clearest candidate in the whole design for a **skill** rather
+than prompt content: genuinely once per campaign, needing none of the play-time
+machinery, and loading only when invoked. Which is also the first real test of
+whether skills are the answer to the context budget.
+
+**The constraint to design against.** A collaborative setting build can hollow
+out the mysteries — a player who helped construct the world knows things their
+character shouldn't, and the GM's private answers get thinner as the shared ones
+get richer. The split probably wants to be: the player authors the *situation*,
+the connections, and what their character cares about; the GM privately authors
+what is actually going on underneath it. Getting that boundary wrong in either
+direction is the failure — too much player authorship and there is nothing to
+find out, too little and it is just prep with extra steps.
+
+**Also absorbs** the lines-and-veils conversation, which `CLAUDE.md` currently
+hangs off "on a first session."
+
+**Status.** Deferred deliberately. Test the current design first — this mode is
+different enough that building it now would mean testing two things at once.
+
