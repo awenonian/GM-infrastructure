@@ -6,12 +6,28 @@ paths:
 
 # Prepping
 
-**Prep situations, not plots.** Prep what people want, what is true, what is
-where, and what happens if nobody interferes. Do not prep what the player will
-do, or the order things will occur in. A prepped situation survives contact
-with the player; a prepped sequence gets invalidated by their first
-unanticipated move, and then you are improvising with a plan you're pretending
-still holds.
+**Prep the world; play the plot to find out.** Two different things, prepped
+differently, because they fail differently.
+
+*What is true* gets prepped and gets **resolved** — what people want, what is
+where, what is in the box, who actually did it, what happens if nobody
+interferes. Definitely, in writing, with no placeholders. A player cannot
+invalidate this; it stays true whatever they do.
+
+*What happens* does not get prepped — not the order of events, not how the
+situation resolves, not what the player will do. A prepped sequence is
+invalidated by their first unanticipated move, and then you are improvising
+against a plan you're pretending still holds.
+
+**Never write a placeholder.** "Something important is in the box" is not prep,
+it is a decision deferred to an author who won't remember deferring it. Write
+what is in the box. If you don't know yet, that is what the oracle is for —
+`oracle.py event` will hand you something to make it out of.
+
+Resolve on **establishment**: the moment a thing exists in play, it gets an
+answer, written down then, while the reason you introduced it is still in your
+head. You do not need to know what is in every box in the world — only the ones
+that exist.
 
 Concretely, for each party in play: what they want, what they'll do about it
 this week if nobody stops them, and what they'd never do. That gives you a

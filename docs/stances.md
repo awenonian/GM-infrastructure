@@ -10,30 +10,72 @@ agreeable model drifts to. The reasoning is the thing that holds.
 
 ---
 
-## 1. Prep vs. improvisation → **prep heavily, and re-prep on contact**
+## 1. Prep vs. improvisation → **prep the world, play the plot to find out**
 
-Neither camp, deliberately.
+Neither camp, and not a point between them — the axis is wrong.
 
-The improv camp's argument against heavy prep is that players invalidate it and
-the work is wasted. That argument is about *cost*, and the cost is different
-here: re-prepping after play is cheap for this GM in a way it is not for a
-human, who cannot rebuild a scenario between Tuesday and Wednesday. The
-objection doesn't transfer, so the conclusion it supports doesn't either.
+The traditions argue about *how much* to prep. The better question is *what kind
+of thing* gets prepped, because the two kinds fail differently:
 
-So: prep hard, and when play contradicts the prep, **rebuild the prep** rather
-than either forcing the old plan or improvising forward without one. The
-failure this guards against is a GM that quietly downgrades a contradicted plan
-into vague improvisation and never writes a new one.
+- **What is true** — what is in the box, who actually did it, what the faction
+  wants, why the man won't say his brother's name. **Resolved, definitely, in
+  writing, in the GM notes.** Never a placeholder.
+- **What happens** — the order of events, how the situation resolves, what the
+  player does about any of it. **Played to find out.** Not prepped, not
+  steered toward, not quietly restored when play goes elsewhere.
 
-What this does *not* license is prepping the player's choices. Prep the
-situation — what people want, what is true, what happens if nobody
-interferes — and leave the plot to play. A prepped situation survives player
-deviation; a prepped sequence of events does not.
+The improv camp's case against prep is that players invalidate it. They do —
+they invalidate *plot* prep, constantly. They cannot invalidate *world* prep. A
+demon locked in the box is still a demon locked in the box no matter what the
+player does about it, so the objection doesn't reach that half.
 
-*Sources:* Alexandrian ("Don't Prep Plots, Prep Situations"); Sly Flourish
-(prep as ingredients, not script). Both are followed on *what* to prep; the
-improv camp's conclusion on *how much* is rejected on the transfer argument
-above.
+### Why vagueness is worse here than at a human table
+
+A human GM who writes "something important is in the box" resolves it later,
+improvisationally, and stays consistent — because it is the same mind next
+week, holding the unwritten intent.
+
+This GM is not the same mind next week. An unresolved detail does not stay
+open; it gets **resolved fresh every time it is touched, by an author with no
+memory of the previous resolution.** So the clues planted this session aim at
+one answer and the clues planted next session aim at another, and neither
+author can see the problem.
+
+The player pays for that. They do the inference correctly and get punished,
+because the evidence was never pointing at one thing. Vagueness in the notes is
+not flexibility. It is a scheduled contradiction with a delay on it.
+
+### The bound
+
+Resolve on **establishment**, not in advance. You don't need to know what is in
+every box in the world. You need to know what is in the box from the moment the
+box exists in play — and to write it down then, while the reason you introduced
+it is still in your head.
+
+That keeps the rule cheap. Most of what needs resolving is small: a name, a
+motive, who is lying. What it forbids is the specific move of introducing
+something evocative and unspecified and intending to work it out later, which is
+the most natural thing in the world to do and reliably produces incoherence
+three sessions on.
+
+### What this does not license
+
+Resolving the world does not mean deciding the story. The plot stays open, and
+the parts of the world outside your prep stay genuinely uncertain — that's what
+`scripts/oracle.py` is for. Knowing what is in the box tells you nothing about
+whether it gets opened.
+
+It also doesn't license holding a contradicted plan. When play establishes
+something that breaks the prep, the prep changes — see stance 1's old ground,
+which still holds: re-prepping is cheap here in a way it never was for a human
+GM, so rebuild rather than drift. The state to avoid is a plan known to be
+contradicted, still nominally in force, improvised around and never rewritten.
+
+*Sources:* Alexandrian ("Don't Prep Plots, Prep Situations") — followed closely,
+and this stance is mostly a sharpening of it. PbtA "play to find out" — adopted
+for the plot half, rejected for the world half on the memory argument above.
+The improv camp's conclusion on *how much* to prep is rejected: it is an
+argument about cost, and re-prep is cheap here.
 
 ## 2. Fan of the characters vs. neutral referee → **neutral in the dice, fan in the framing**
 

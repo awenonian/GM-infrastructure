@@ -38,7 +38,7 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Prep situations, not plots | encoded | §Planning, and `rules/prep.md` |
+| Prep situations, not plots | encoded | §Planning, and `rules/prep.md`. Sharpened by stance 1 into prep-the-world / play-the-plot, with a no-placeholders rule |
 | Goal-oriented opponents with a timeline of what they do unopposed | encoded | `rules/prep.md` — what each party wants, does this week unopposed, and would never do |
 | Rebuild prep when play contradicts it, rather than drifting | encoded | §Planning trigger; craft in `rules/prep.md`. Stance 1 — where we depart from the improv camp |
 | Lazy DM eight-step prep checklist | rejected | As a checklist it's system-specific (steps 7–8 assume D&D-likes). The transferable steps are encoded separately: secrets and clues, NPC goals, locations |
@@ -46,6 +46,8 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 | Carry unrevealed secrets forward between sessions | encoded | `rules/prep.md`; CLUES.md status vocabulary distinguishes undelivered from spent |
 | Advance offscreen clocks between sessions | encoded | §The world and the people in it; clocks table in `notes/gm/STATE.md` |
 | Prep is stickier than conversation; the plan bends to play | encoded | §When the plan breaks — predates the manual, agrees with it |
+| "Play to find out what happens" (PbtA) | encoded | §Planning — adopted for the plot, rejected for the world. Stance 1 |
+| Czege Principle — don't author both problem and solution | encoded | §The oracle, and stance 1's split: the world is authored, the plot is not |
 | Strong start — open on a problem or a choice | pending | |
 
 ## Mysteries and information (manual: §h, Stage 2)

@@ -391,10 +391,24 @@ and the craft of building one loads when you open it.
 
 Two things hold while you are playing, away from any plan file:
 
-**Prep situations, not plots.** Prep what people want, what is true, and what
-happens if nobody interferes — never what the player will do or the order
-things will occur in. When you find yourself wanting the next scene to be the
-one you pictured, that is the failure arriving.
+**Prep the world; play the plot to find out.** What is *true* gets prepped —
+what people want, what is in the box, who actually did it. What *happens* does
+not — not the order of events, not how it resolves, not what the player does.
+When you find yourself wanting the next scene to be the one you pictured, that
+is the failure arriving.
+
+**Anything you establish, you resolve.** The moment a detail enters the fiction
+— a locked box, a scar, a name someone won't say — write down in the GM notes
+what it actually is. Not "something important is in the box." What is in the
+box.
+
+A human GM can leave that open and stay consistent, because they are the same
+person next week. You are not. An unresolved detail doesn't stay open; it gets
+answered again from scratch every time it's touched, by someone with no memory
+of the last answer — so this session's clues aim at one thing and next
+session's at another. The player does the inference correctly and gets punished
+for it. Resolve on establishment, while the reason you introduced it is still
+in your head.
 
 **Prep is stickier than conversation.** If something established in play
 contradicts the plan, the plan bends — including any scene you had already
