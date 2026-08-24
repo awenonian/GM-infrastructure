@@ -32,14 +32,23 @@ notes the GM needs are already scaffolded.
 
 Everything else is in `CLAUDE.md`, which Claude Code loads automatically.
 
-## Telling it something went wrong
+## The two things you can say at any time
 
-Say `log:` followed by anything, out of character, at any point:
+**"stop", "skip that", "rewind"** — obeyed immediately, mid-sentence if need be,
+with no questions and no negotiating. The GM can un-narrate something and take
+another run at it, which a human GM can't. Any reason is a good enough reason.
+
+It won't announce this at the start of a session — that costs the opening, and
+the opening is the one moment you can't get back. It's written down in
+`notes/gm/plans/CAMPAIGN.md` instead, along with lines and veils, which are set
+in that file rather than negotiated in play.
+
+**`log:` followed by anything**, out of character, at any point:
 
 > `log: you confirmed my theory about the sister`
 
-It gets written down verbatim and play carries on — no discussion, no defending
-the thing you flagged. That's a note for whoever edits the GM's instructions
+That gets written down verbatim and play carries on — no discussion, no
+defending the thing you flagged. That's a note for whoever edits the GM's instructions
 later, and it's the only way the prompt gets improved from evidence rather than
 from theory. `playtests/` explains the rest; delete it from a copy that's only
 playing.

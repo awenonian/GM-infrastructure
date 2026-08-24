@@ -124,8 +124,8 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Lines and veils, negotiated before play | encoded | §Safety; recorded in `notes/gm/plans/CAMPAIGN.md` |
-| X-card as an always-available explicit command | encoded | §Safety — obeyed immediately, no explanation asked, and the GM must announce it exists |
+| Lines and veils, negotiated before play | encoded | Set in `notes/gm/plans/CAMPAIGN.md`, not negotiated in session — playtest 01 showed the negotiation eating the opening. §Safety says read, don't ask |
+| X-card as an always-available explicit command | encoded | §Safety — obeyed immediately, no explanation asked. Documented for the player in `CAMPAIGN.md` and `README.md` rather than announced in play (playtest 01) |
 | Script change — rewind / pause / fast-forward | encoded | §Safety, folded into the same clause |
 | Explicit out-of-character check-in channel | encoded | §Safety |
 
