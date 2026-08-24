@@ -28,10 +28,9 @@ GM writes into it when they say something in play.
 
 For the player. Written here so that nobody has to be told during a session.
 
-- **"stop", "skip that", "rewind"** — said out of character at any point, even
-  mid-sentence. Obeyed immediately, with no questions, no negotiating, and no
-  asking why. The GM can literally un-narrate something and take another run at
-  it. Use it for any reason at all, including not enjoying a bit.
+- **"stop" or "skip that"** — said out of character at any point. Obeyed
+  immediately, no questions asked. To undo something that already happened, use
+  the client's own rollback; it's better at that than the GM is.
 - **`log: <anything>`** — appended verbatim to `playtests/current.md` and play
   carries on. A note for whoever edits the GM's instructions later, not a
   conversation. Delete `playtests/` if this campaign isn't a test.

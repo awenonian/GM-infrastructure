@@ -24,7 +24,7 @@ It then went on to negotiate lines and veils.
 
 ## Diagnosis
 
-Not a failure of adherence. The prompt asked for both, in three places:
+Not a failure of adherence. The prompt asked for all of it, in three places:
 
 - `§Starting up` — "On a first session, settle lines and veils before play."
 - `§Safety` — "Ask before the first scene."
@@ -32,35 +32,46 @@ Not a failure of adherence. The prompt asked for both, in three places:
 
 The GM followed all three, competently and in good order.
 
-**The finding is about instruction shape, not about this content.** `CLAUDE.md`
-also asks for a strong start — open on a problem or a choice — and housekeeping
-beat it. A concrete triggered instruction ("on a first session, do X") wins over
-an aspirational quality goal ("open well") every time, because one names an
-action and the other names a standard. So *anything* phrased as a session-open
-trigger will colonise the opening, which is the most valuable minute in the
-session and the one that can't be retaken.
+**The finding is redundancy with the client, not timing.** A first-session
+opening that does some housekeeping is fine — that was a wrong conclusion drawn
+on the first pass at this record, and it briefly became a rule in `CLAUDE.md`
+banning preambles outright. The player's actual objection was narrower: the
+client already has a rollback control that is strictly more powerful than
+anything the GM can offer, since it removes turns rather than asking the
+narrator to take another run at them. So the prompt was spending the opening
+advertising a worse version of a feature the player already had.
 
-Worth auditing for on every future edit: an instruction that fires at session
-start is competing for the opening whether or not it looks like it is.
+Lines and veils are a different case and the player's read was different too:
+worth having, not worth re-negotiating every session. That belongs in a file.
+
+**The lint this generalises to:** before writing a rule, check whether the
+client or the harness already does the job. A prompt that reimplements a
+platform feature pays for it in context and in session time, and delivers the
+weaker version. This is the opposite of the usual failure — the usual one is
+assuming the model will do something without being told.
 
 ## Change made
-
-Move first-session housekeeping out of session time and into files the player
-reads. The levers keep working; they stop being announced.
 
 - Deleted the `§Starting up` trigger.
 - `§Safety` now says lines and veils are already settled in `CAMPAIGN.md` — read
   them, don't ask — and that "none recorded" is an answer rather than a gap.
-- Deleted "Tell the player this exists, once, at the start."
-- Added an explicit "None of this is a preamble. Start the game."
+- The stop/rewind block is cut to the part the client can't do: how the GM
+  responds when told to stop mid-scene. Un-narration is gone, and it is now told
+  never to announce the lever, since the rollback control is the real one.
 - `CAMPAIGN.md` ships with lines and veils pre-set to "none recorded", plus a
-  **Table commands** section addressed to the player documenting stop/rewind and
-  `log:`. `README.md` carries the same.
+  **Table commands** section addressed to the player. `README.md` mirrors it.
 
-The safety property is preserved rather than traded away: the stop command still
-works whether or not it was announced, the check-in-when-pushing rule is scene
-triggered rather than calendar triggered, and lines and veils are now editable by
-the player in a file instead of negotiated under time pressure at the table.
+The safety property is preserved rather than traded away: an out-of-character
+stop is still obeyed without negotiation, the check-in-when-pushing rule is
+scene triggered rather than calendar triggered, and lines and veils are now
+editable by the player in a file instead of negotiated under time pressure.
 
-Net: `CLAUDE.md` 479 → 480 lines, since the anti-preamble rule costs about what
-the three triggers saved. The win is behavioural, not budgetary.
+## Correction to this record
+
+The first version of this file diagnosed the problem as instruction shape —
+that session-open triggers colonise the opening and beat the prompt's own advice
+to start on a hook. That reads well and is probably true in general, but it
+wasn't what went wrong here, and acting on it produced a rule that banned
+something the player was happy with. Corrected after they pushed back. Worth
+keeping visible: the first explanation for a playtest finding is itself a
+theory, and this one was tidier than the evidence supported.

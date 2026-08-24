@@ -64,12 +64,12 @@ is the exact thing the file exists to prevent.
 **Run the scripts.** They're small enough to look correct while being wrong.
 `roll.py` and `oracle.py` both take `--seed`, so a check is reproducible.
 
-**Watch for instructions that fire at session start.** Anything phrased as "at
-the start, do X" competes for the opening of the session, and it beats the
-prompt's own advice to open on a hook — a named action wins against a quality
-goal. If a rule needs to be true at session start but doesn't need to be *said*,
-put it in a file the player reads instead. See
-`playtests/01-cold-start-preamble.md`.
+**Check whether the client already does it.** Before writing a rule, ask
+whether the surface the game runs on already provides that capability. A prompt
+that reimplements a platform feature pays for it twice — in context, and in the
+session time spent announcing it — and ships the weaker version. Rewinding is
+the worked example: the client's rollback removes turns, which beats asking the
+narrator to un-say something. See `playtests/01-cold-start-preamble.md`.
 
 **Keep `CLAUDE.md` earning its length.** It loads in full every session, and
 the docs are explicit that longer files reduce adherence. Adding to it is a

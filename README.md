@@ -32,16 +32,15 @@ notes the GM needs are already scaffolded.
 
 Everything else is in `CLAUDE.md`, which Claude Code loads automatically.
 
-## The two things you can say at any time
+## Saying something out of character
 
-**"stop", "skip that", "rewind"** — obeyed immediately, mid-sentence if need be,
-with no questions and no negotiating. The GM can un-narrate something and take
-another run at it, which a human GM can't. Any reason is a good enough reason.
+**"stop" or "skip that"** — obeyed immediately, with no questions and no
+negotiating. To undo something that already happened, use your client's
+rollback; the GM won't try to duplicate it, and won't advertise either one at
+you.
 
-It won't announce this at the start of a session — that costs the opening, and
-the opening is the one moment you can't get back. It's written down in
-`notes/gm/plans/CAMPAIGN.md` instead, along with lines and veils, which are set
-in that file rather than negotiated in play.
+Lines and veils live in `notes/gm/plans/CAMPAIGN.md` and are set by editing that
+file, not negotiated at the top of a session.
 
 **`log:` followed by anything**, out of character, at any point:
 

@@ -125,8 +125,8 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 | Claim | Status | Where / why |
 |---|---|---|
 | Lines and veils, negotiated before play | encoded | Set in `notes/gm/plans/CAMPAIGN.md`, not negotiated in session — playtest 01 showed the negotiation eating the opening. §Safety says read, don't ask |
-| X-card as an always-available explicit command | encoded | §Safety — obeyed immediately, no explanation asked. Documented for the player in `CAMPAIGN.md` and `README.md` rather than announced in play (playtest 01) |
-| Script change — rewind / pause / fast-forward | encoded | §Safety, folded into the same clause |
+| X-card as an always-available explicit command | partly rejected | §Safety keeps "obey an out-of-character stop without negotiating". The rewind half is dropped: the client's rollback removes turns outright, which beats a GM un-narrating, so the prompt was shipping a worse copy of a feature the player already had (playtest 01) |
+| Script change — rewind / pause / fast-forward | rejected | Provided by the client's rollback control, better than the prompt can. The manual's note that an AI "can literally rewind and re-narrate" is true and still the wrong build (playtest 01) |
 | Explicit out-of-character check-in channel | encoded | §Safety |
 
 ## Architecture (manual: Stage 6)
