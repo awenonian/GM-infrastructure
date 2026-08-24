@@ -17,14 +17,14 @@ on. This loaded because of a path match, not because the job changed.
 
 `CLAUDE.md` at the root is a **product artifact**. It is addressed to a GM
 running a campaign, in the second person, and it will have told you that you
-are the Game Master. That instruction is for the forked copy, not for this
+are the Game Master. That instruction is for the campaign copy, not for this
 session. Read it as the thing you are editing.
 
 ## The layout
 
 | | |
 |---|---|
-| `CLAUDE.md` | The GM prompt. Loaded into every session of every fork. The product. |
+| `CLAUDE.md` | The GM prompt. Loaded into every session of every campaign. The product. |
 | `notes/` | Scaffolding for the campaign's memory. Templates and READMEs only — no play content. |
 | `scripts/` | `roll.py` and `oracle.py`. The parts of the game the GM can't talk itself out of. |
 | `docs/research/` | Source material, verbatim. |
@@ -66,12 +66,13 @@ is the exact thing the file exists to prevent.
 
 **Keep `CLAUDE.md` earning its length.** It loads in full every session, and
 the docs are explicit that longer files reduce adherence. Adding to it is a
-real cost paid by every session in every fork. Prefer sharpening a clause over
-adding one, and put anything that isn't needed *during play* somewhere else.
+real cost paid by every session of every campaign. Prefer sharpening a clause
+over adding one, and put anything that isn't needed *during play* somewhere
+else.
 
-**`notes/` stays empty of play.** The files there are templates that ship to
-forks. If a campaign's content lands in one, it becomes someone else's starting
-canon.
+**`notes/` stays empty of play.** This repository is a GitHub template, so the
+files in `notes/` are the starting state of every campaign made from it. If a
+campaign's content lands in one, it becomes someone else's opening canon.
 
 ## The thing to be suspicious of
 

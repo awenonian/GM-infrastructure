@@ -5,7 +5,7 @@ instead of from theory.
 
 **This directory is testing apparatus, not part of the game and not part of the
 campaign.** It ships in the template because the prompt is still being built; it
-can be deleted from a fork that's only playing.
+can be deleted from a copy that's only playing.
 
 ## The log command
 

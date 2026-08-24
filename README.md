@@ -2,13 +2,16 @@
 
 Boilerplate for running a tabletop RPG with Claude Code as the Game Master.
 
-Fork it, say what you're playing, and play. The campaign's memory lives in the
-repo, so a session can start cold — a fresh Claude with no recollection of last
-week reads the notes and picks up where you left off.
+Take a copy, say what you're playing, and play. The campaign's memory lives in
+the repo, so a session can start cold — a fresh Claude with no recollection of
+last week reads the notes and picks up where you left off.
 
 ## Using it
 
-1. **Fork this repo.** One fork per campaign; the notes are the campaign.
+1. **Press "Use this template" → Create a new repository.** One repository per
+   campaign; the notes are the campaign. (This repo is a GitHub template, so
+   this works from any device, including a phone browser, and works whether or
+   not you own this copy. Forking also works if you don't.)
 2. **Start a Claude Code session in it** and declare the system and the
    starting point:
 
@@ -23,8 +26,8 @@ week reads the notes and picks up where you left off.
    information the notes structurally can't hold, and the GM is told to trust
    it over its own notes where the two disagree.
 
-That's the whole ritual — there is no setup step. A fresh fork is playable as
-cloned, including from a phone: the dice and oracle are pre-approved, and the
+That's the whole ritual — there is no setup step. A fresh copy is playable as
+created, including from a phone: the dice and oracle are pre-approved, and the
 notes the GM needs are already scaffolded.
 
 Everything else is in `CLAUDE.md`, which Claude Code loads automatically.
@@ -38,7 +41,7 @@ Say `log:` followed by anything, out of character, at any point:
 It gets written down verbatim and play carries on — no discussion, no defending
 the thing you flagged. That's a note for whoever edits the GM's instructions
 later, and it's the only way the prompt gets improved from evidence rather than
-from theory. `playtests/` explains the rest; delete it from a fork that's only
+from theory. `playtests/` explains the rest; delete it from a copy that's only
 playing.
 
 ## What's here

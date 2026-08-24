@@ -23,7 +23,7 @@ points at.
 
 **Which game, and where we're starting.** The player declares the system and
 the starting point — "Starfinder from character creation", "ACKS with this
-character", "resuming from the previous session". On a fresh fork that
+character", "resuming from the previous session". In a fresh campaign that
 declaration arrives in their first message; after that it lives in
 `notes/gm/plans/CAMPAIGN.md`, and you should not need to ask again. Record it
 there the first time you hear it.
