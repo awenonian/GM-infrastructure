@@ -132,6 +132,15 @@ find out, too little and it is just prep with extra steps.
 **Also absorbs** the lines-and-veils conversation, which `CLAUDE.md` currently
 hangs off "on a first session."
 
-**Status.** Deferred deliberately. Test the current design first — this mode is
-different enough that building it now would mean testing two things at once.
+**Status.** Infrastructure built; the mode itself is still to be designed.
+`.claude/skills/session-zero/SKILL.md` exists and carries the frame — what it
+suspends from `CLAUDE.md`, the player-authors-the-situation boundary above, where
+each phase's output lands, and how it ends. Its phases are a sketch. Routing is
+in `CLAUDE.md` §Starting up, off the session zero line in
+`notes/gm/plans/CAMPAIGN.md`; stance 7 records why it is a skill and why the
+play prompt did not move to meet it.
+
+The original reason for deferring — that building it would mean testing two
+things at once — still applies to the *contents*. It stopped applying to the
+scaffolding, because a mode with nowhere to live can't be drafted at all.
 

@@ -91,12 +91,30 @@ each run gets its own memory directory.
 total in the header. That's the number the triage is trying to move; without a
 before-figure you can't tell whether a cut helped or just made the file shorter.
 
+## Decide which mode you're testing
+
+A fresh copy opens in session zero, because `notes/gm/plans/CAMPAIGN.md` says
+`not yet held`. That makes it part of the fixed opening, and it is now a second
+variable: a run that spent forty minutes building a world with the player is not
+comparable to one that started playing immediately, whatever their first
+messages said.
+
+So set the line deliberately before the run and record it in the log header:
+
+- **Testing session zero** — leave it at `not yet held`.
+- **Testing play** — set it to `skipped — playtest` and open with the system and
+  a character, the way the old fixed openings did. Otherwise the run is a
+  session-zero run wearing the wrong label.
+
+Testing both in one run tests neither, since the second half inherits a world
+the first half invented and no two runs will inherit the same one.
+
 ## What to play
 
-Short and broad beats long and deep. One run should touch:
+Short and broad beats long and deep. One run of **play** should touch:
 
-- **Character creation**, or enough of it to see whether the rules skill gets
-  loaded and used rather than recalled.
+- **Character creation**, if the run is a session-zero one — enough of it to see
+  whether the rules skill gets loaded and used rather than recalled.
 - **An investigation beat** — something to work out, with a wrong theory offered
   out loud. This is where the withholding rules either hold or don't, and it's
   the single most informative thing you can test.

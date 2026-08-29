@@ -2,6 +2,8 @@
 
 - **Date:**
 - **System:**
+- **Mode:** <session zero / play>
+- **Session zero line:** <not yet held / skipped — playtest / held>
 - **Started from:** <character creation / an existing character>
 - **Where it ran:** <web / desktop app / phone / local CLI>
 - **Prompt version:** <commit sha of CLAUDE.md and the rules>

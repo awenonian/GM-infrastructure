@@ -4,7 +4,8 @@ paths:
   - "README.md"
   - "docs/**"
   - "scripts/**"
-  - ".claude/**"
+  - ".claude/rules/**"
+  - ".claude/settings.json"
 ---
 
 # Working on this repository
@@ -25,6 +26,7 @@ session. Read it as the thing you are editing.
 | | |
 |---|---|
 | `CLAUDE.md` | The GM prompt. Loaded into every session of every campaign. The product. |
+| `.claude/skills/session-zero/` | The other mode: the meeting before the campaign. Loads only when invoked, once per campaign. Also the product. |
 | `notes/` | Scaffolding for the campaign's memory. Templates and READMEs only — no play content. |
 | `scripts/` | `roll.py` and `oracle.py`. The parts of the game the GM can't talk itself out of. |
 | `docs/research/` | Source material, verbatim. |
@@ -41,6 +43,13 @@ in the root file.
 That constraint decides several things that look like style choices. Don't move
 the GM prompt into an import or a nested file to tidy it up; you would be
 trading a real guarantee for a cosmetic one.
+
+It is also why session zero is a skill and play is not, rather than the two
+being symmetrical files with a router above them. Session zero is one session
+per campaign and can afford to re-read its instructions; play is every session
+after that, compacts, and cannot. Stance 7 has the rest of it. If you are
+about to make that pair tidy, read the stance first — the asymmetry is the
+design.
 
 ## Working rules
 
@@ -70,6 +79,14 @@ that reimplements a platform feature pays for it twice — in context, and in th
 session time spent announcing it — and ships the weaker version. Rewinding is
 the worked example: the client's rollback removes turns, which beats asking the
 narrator to un-say something. See `playtests/01-cold-start-preamble.md`.
+
+**The session-zero skill is not covered by this rule's paths, deliberately.**
+`.claude/skills/**` is excluded for the same reason `notes/` is: a session-zero
+session is *playing*, it re-reads that file after a compaction, and a path
+match there would hand the player's onboarding a set of development
+instructions. So a session that only edits the skill won't load this file. In
+practice such a session also touches `CLAUDE.md` or `docs/`; if it doesn't, say
+so out loud.
 
 **Keep `CLAUDE.md` earning its length.** It loads in full every session, and
 the docs are explicit that longer files reduce adherence. Adding to it is a

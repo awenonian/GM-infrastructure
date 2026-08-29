@@ -23,11 +23,13 @@ GM that read it mid-session would take it for orders.
 
 The GM prompt is `CLAUDE.md` at the root, loaded into every session, alongside
 `.claude/rules/notes.md` and `.claude/rules/prep.md`, which are part of the game
-and load when the GM opens the files they describe. The instructions for
-*building* the GM are `.claude/rules/developing.md`, which
-carries `paths:` frontmatter and so loads only when something opens `CLAUDE.md`,
-`README.md`, `docs/`, `scripts/`, or `.claude/`. A session that is playing
-touches none of those — play reads and writes `notes/` — so the development
+and load when the GM opens the files they describe. `.claude/skills/session-zero/`
+is also part of the game — the one-per-campaign mode before play, loaded when
+`CLAUDE.md` routes into it. The instructions for *building* the GM are
+`.claude/rules/developing.md`, which carries `paths:` frontmatter and so loads
+only when something opens `CLAUDE.md`, `README.md`, `docs/`, `scripts/`,
+`.claude/rules/`, or `.claude/settings.json`. A session that is playing touches
+none of those — play reads and writes `notes/` — so the development
 instructions never appear during a game.
 
 The separation is deliberately one-directional. Root `CLAUDE.md` is the only
@@ -35,8 +37,11 @@ instruction file re-injected after `/compact`, so the GM prompt has to live
 there and will load during development sessions too. That's why it opens by
 naming both jobs and pointing away from itself.
 
-One gap worth knowing: `notes/` is excluded from the rule's paths on purpose,
-because the GM reads `notes/README.md` at the start of every session and
-matching there would fire the development instructions during play. A session
-that *only* edits the notes templates won't load them. In practice such a
-session also touches `docs/` or `CLAUDE.md`; if it doesn't, say so out loud.
+Two gaps worth knowing, both deliberate. `notes/` is excluded from the rule's
+paths because the GM reads `notes/README.md` at the start of every session, and
+matching there would fire the development instructions during play.
+`.claude/skills/` is excluded for the same reason one level along: a session-zero
+session re-reads its own skill file after a compaction, and that is the player's
+onboarding, not a development session. So a session that *only* edits the notes
+templates or the session-zero skill won't load them. In practice such a session
+also touches `docs/` or `CLAUDE.md`; if it doesn't, say so out loud.

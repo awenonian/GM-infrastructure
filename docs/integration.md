@@ -13,8 +13,9 @@ Status vocabulary:
   rejection is a decision and is worth as much as an adoption.
 
 Sections named below are in `CLAUDE.md` unless the row says `rules/…`, which
-means a path-scoped rule that loads when the GM opens a matching file. Stance 6
-explains which goes where.
+means a path-scoped rule that loads when the GM opens a matching file, or
+`skills/…`, which means a mode that loads only when invoked. Stance 6 explains
+which of the first two a rule goes in; stance 7 covers the third.
 
 Nothing gets silently dropped. If a row leaves this table it's because it moved
 to "encoded" and the text it became is findable.
@@ -124,7 +125,7 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Lines and veils, negotiated before play | encoded | Set in `notes/gm/plans/CAMPAIGN.md`, not negotiated in session — playtest 01 showed the negotiation eating the opening. §Safety says read, don't ask |
+| Lines and veils, negotiated before play | encoded | Set in `notes/gm/plans/CAMPAIGN.md`, not negotiated in session — playtest 01 showed the negotiation eating the opening. §Safety says read, don't ask. Session zero is where they get set, per `skills/session-zero` |
 | X-card as an always-available explicit command | partly rejected | §Safety keeps "obey an out-of-character stop without negotiating". The rewind half is dropped: the client's rollback removes turns outright, which beats a GM un-narrating, so the prompt was shipping a worse copy of a feature the player already had (playtest 01) |
 | Script change — rewind / pause / fast-forward | rejected | Provided by the client's rollback control, better than the prompt can. The manual's note that an AI "can literally rewind and re-narrate" is true and still the wrong build (playtest 01) |
 | Explicit out-of-character check-in channel | encoded | §Safety |
@@ -139,3 +140,4 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 | Front-load the most-violated rules; buried rules are lost to recency | encoded | §Adjudication sits immediately after startup, before Notes and Planning |
 | A versioned system-prompt "contract" | pending | Nothing versions `CLAUDE.md` beyond git history |
 | Treat every observed rule-break as a new prompt clause | encoded | `playtests/` and the `log:` command in §Safety; protocol in `docs/playtesting.md` |
+| Establish tone, stakes, and content expectations up front — session zero | scaffolded | `skills/session-zero` is the mode and `CLAUDE.md` §Starting up routes into it off the session zero line in `CAMPAIGN.md`. The frame is built; the phase contents are a first-pass sketch and still owed a design pass. Stance 7 for why it's a skill rather than half of a split prompt |

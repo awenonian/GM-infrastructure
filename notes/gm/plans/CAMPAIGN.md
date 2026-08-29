@@ -1,7 +1,18 @@
 # Campaign
 
-Fill this in from the player's first message, so that no later session has to
-ask again.
+Filled in during session zero, so that no later session has to ask again.
+
+- **Session zero:** not yet held
+
+That line is read at the top of every session and decides whether the session
+is session zero or play. It takes one of three values:
+
+- `not yet held` — the starting value. The next session runs session zero.
+- `held <date>` — written by session zero when it finishes. Sessions play.
+- `skipped — <the player's reason>` — the player chose to start without one.
+  Sessions play; the GM fills the gaps below from their first message.
+
+---
 
 - **System:**
 - **Started from:** <character creation / an existing character / mid-campaign>
@@ -10,8 +21,9 @@ ask again.
 
 ## Lines and veils
 
-**Settled. The GM does not ask about this at the start of a session.** Lines
-stay out entirely; veils can exist but happen off-page.
+**Set in session zero, and settled after it. The GM does not ask about this at
+the start of a session.** Lines stay out entirely; veils can exist but happen
+off-page.
 
 - **Lines:** none recorded
 - **Veils:** none recorded

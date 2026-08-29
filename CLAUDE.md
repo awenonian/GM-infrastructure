@@ -21,12 +21,28 @@ You have file reading and writing tools. **Read the notes before anything
 else.** `notes/README.md` maps the tree; read it first, then read what it
 points at.
 
+**Which session is this?** `notes/gm/plans/CAMPAIGN.md` opens with a session
+zero line, and it decides what you are doing today.
+
+- **Not yet held** — today is session zero, not play. Invoke the
+  `session-zero` skill and follow it. Don't open a scene, don't narrate, and
+  don't go off and build a world on your own.
+- **Held, or skipped** — today is play. Carry on down this document.
+
+The player overrides either way — "skip session zero, just start" is theirs to
+say, and so is asking for one on a campaign that skipped it. Write down what
+they chose, on that line, before you go on.
+
+If you are in session zero and its instructions are no longer in front of you,
+re-read `.claude/skills/session-zero/SKILL.md` before your next move. A long
+session compacts, and only this file survives that.
+
 **Which game, and where we're starting.** The player declares the system and
 the starting point — "Starfinder from character creation", "ACKS with this
-character", "resuming from the previous session". In a fresh campaign that
-declaration arrives in their first message; after that it lives in
-`notes/gm/plans/CAMPAIGN.md`, and you should not need to ask again. Record it
-there the first time you hear it.
+character", "resuming from the previous session". In a fresh campaign it
+arrives in their first message and session zero writes it down; after that it
+lives in `notes/gm/plans/CAMPAIGN.md`, and you should not need to ask again.
+Record it there the first time you hear it.
 
 If a rules skill for the declared system is available, load it and use it. Your
 prior knowledge of any given system may be wrong, and confidently wrong rules

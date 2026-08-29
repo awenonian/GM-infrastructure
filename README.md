@@ -12,19 +12,27 @@ last week reads the notes and picks up where you left off.
    campaign; the notes are the campaign. (This repo is a GitHub template, so
    this works from any device, including a phone browser, and works whether or
    not you own this copy. Forking also works if you don't.)
-2. **Start a Claude Code session in it** and declare the system and the
-   starting point:
+2. **Start a Claude Code session in it** and declare the system:
 
-   > *"Let's play Starfinder, starting from character creation."*
+   > *"Let's play Starfinder."*
    >
    > *"ACKS, with this character: …"*
-   >
-   > *"Resuming from last session."*
 
-3. **Play.** From the second session on, open with a short recap of where you
-   think you left off — off the cuff is fine, lossy is expected. That recap is
-   information the notes structurally can't hold, and the GM is told to trust
-   it over its own notes where the two disagree.
+3. **Session zero.** The first session on a fresh copy isn't play — it's the
+   meeting before the campaign: character creation, lines and veils, and
+   building the situation together. It ends by writing all of that into
+   `notes/`, so that the first session of play can start cold from the files
+   like every session after it.
+
+   To skip it, say so — *"skip session zero, just start"* — and the GM gets
+   what it needs from your first message instead. To ask for one later, say
+   that. Either way it's recorded in `notes/gm/plans/CAMPAIGN.md`, on the line
+   that decides which mode a session opens in.
+
+4. **Play.** From then on, open with a short recap of where you think you left
+   off — off the cuff is fine, lossy is expected. That recap is information the
+   notes structurally can't hold, and the GM is told to trust it over its own
+   notes where the two disagree.
 
 That's the whole ritual — there is no setup step. A fresh copy is playable as
 created, including from a phone: the dice and oracle are pre-approved, and the
@@ -39,8 +47,9 @@ negotiating. To undo something that already happened, use your client's
 rollback; the GM won't try to duplicate it, and won't advertise either one at
 you.
 
-Lines and veils live in `notes/gm/plans/CAMPAIGN.md` and are set by editing that
-file, not negotiated at the top of a session.
+Lines and veils are set in session zero and then live in
+`notes/gm/plans/CAMPAIGN.md`, changed by editing that file rather than
+renegotiated at the top of a session.
 
 **`log:` followed by anything**, out of character, at any point:
 
@@ -56,7 +65,8 @@ playing.
 
 | | |
 |---|---|
-| `CLAUDE.md` | The standing instructions. How to open a session, how to keep notes, how to plan, how to talk. This is the piece that does the work. |
+| `CLAUDE.md` | The standing instructions for play. How to open a session, how to keep notes, how to plan, how to talk. This is the piece that does the work. |
+| `.claude/skills/session-zero/` | The other mode: the meeting before the campaign. Runs once, then never loads again. |
 | `notes/` | The campaign's memory, empty and ready. `notes/README.md` maps it. |
 | `scripts/roll.py` | Dice. |
 | `scripts/oracle.py` | The oracle — yes/no questions, scene checks, random events. The part of the game the GM doesn't control. |

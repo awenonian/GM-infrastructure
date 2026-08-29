@@ -209,6 +209,45 @@ load a rule, it belongs in `CLAUDE.md`.
 
 ---
 
+## 7. One prompt for both modes vs. two → **play in the root prompt, session zero in a skill**
+
+Session zero and play are different jobs. Almost none of the play prompt
+applies to the meeting before the campaign — no adjudication, no scene framing,
+no withholding of interpretation — and some of it actively misfires there, since
+that session *is* collaborative authoring with the player and the play prompt is
+built to resist exactly that.
+
+The obvious response is symmetry: cut `CLAUDE.md` down to a router and put play
+and session zero either side of it, each loaded for its own kind of session.
+**Don't.** Stance 6's constraint hasn't moved — root `CLAUDE.md` is the only
+instruction file re-injected after a compaction, and play is the mode that
+compacts. A four-hour session that loses the Adjudication section halfway
+through has lost the thing the repository is for, and it loses it invisibly,
+in the direction of agreeing with the player. Session zero is one session per
+campaign, is mostly conversation rather than narration, and can be told to
+re-read its own file. The two modes have genuinely different exposure to that
+failure, so the design is asymmetric on purpose:
+
+| | Where | Because |
+|---|---|---|
+| Play | root `CLAUDE.md` | Every session, and the one that compacts |
+| Session zero | `.claude/skills/session-zero/` | Once per campaign, costs nothing until invoked, survives on a re-read |
+
+What makes the skill safe is that the routing is **not** left to the model
+noticing that a skill exists. `notes/gm/plans/CAMPAIGN.md` carries a session
+zero line, `CLAUDE.md` reads it before anything else, and that line is what
+decides the mode. The skill's own description is a second way in, not the
+first — a player who types "let's play Starfinder" gets routed by the file,
+not by a description match.
+
+The cost paid is real and worth naming: the play prompt is loaded during
+session zero, where most of it doesn't apply. The skill answers that by saying
+outright which sections it suspends, which is better than their being silently
+absent — a suspension the GM has read is a suspension it can notice itself
+violating.
+
+---
+
 ## Revisiting these
 
 These are defaults, not laws, and the manual is explicit that they are
