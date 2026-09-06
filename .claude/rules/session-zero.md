@@ -409,9 +409,15 @@ this file is gone. Do all of it:
 4. **Delete the file.** `rm notes/gm/plans/SESSION-ZERO.md` — pre-approved, so
    it won't interrupt. Deleting it is what ends the mode; while it exists, every
    session will open by reading it.
-5. **Commit, and get it onto the default branch.** Per `CLAUDE.md` § Notes. A
-   deletion that never lands means session zero fires again on the next fresh
-   clone, at which point it is looking at a campaign that has already started.
+5. **Commit and push, then ask about merging.** Per `CLAUDE.md` § Notes — you
+   may not be allowed to merge, so ask.
+
+   This matters more here than anywhere else. A deletion that never reaches the
+   default branch means the next fresh clone still has the file, so session zero
+   fires again — at a campaign that has already started, where the guard at the
+   top of this rule is all that stops it overwriting one. If the merge doesn't
+   happen, say plainly which branch the campaign is on and that the next session
+   has to start from there.
 6. **Then play.**
 
 Don't mark the transition with a ceremony. Move into the game.

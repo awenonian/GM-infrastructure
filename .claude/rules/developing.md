@@ -64,6 +64,15 @@ is the exact thing the file exists to prevent.
 **Run the scripts.** They're small enough to look correct while being wrong.
 `roll.py` and `oracle.py` both take `--seed`, so a check is reproducible.
 
+**Check what the client forbids, as well as what it provides.** A hosted
+session runs under harness instructions the GM never sees us write and cannot
+override — most notably one pinning it to a single branch, which quietly made
+"get the notes onto the default branch" an unfollowable rule. A rule the
+environment won't let the GM execute is worse than no rule: it reads as
+satisfied and isn't. Where the harness blocks something the game needs, write
+the rule as an *ask* addressed to the player, who can grant what the GM can't
+take.
+
 **Check whether the client already does it.** Before writing a rule, ask
 whether the surface the game runs on already provides that capability. A prompt
 that reimplements a platform feature pays for it twice — in context, and in the

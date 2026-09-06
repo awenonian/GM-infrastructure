@@ -105,7 +105,7 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 
 | Claim | Status | Where / why |
 |---|---|---|
-| External state is the source of truth, not model memory | encoded | The `notes/` tree is the scaffolding; §Notes now also requires the notes to reach the repository's default branch before the session ends. A file written and never committed is not external state — the next session is a fresh clone |
+| External state is the source of truth, not model memory | encoded | The `notes/` tree is the scaffolding; §Notes also handles getting it out of the session, since a file written and never pushed is not external state — the next session is a fresh clone of the default branch. Commit-and-push is unconditional; merging is an *ask*, because the hosted harness pins a session to one branch and that instruction outranks `CLAUDE.md` |
 | Re-anchor canon at session open (the AI's reason to recap differs from a human's) | encoded | §Starting up |
 | Just-in-time rule injection rather than parametric recall | scaffolded | Rules skills, per §Starting up |
 | Retconning policy decided in advance | pending | Partly served by the recap-reconciliation rules in §Starting up, which resolve player-vs-notes but not notes-vs-notes |
