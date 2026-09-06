@@ -137,6 +137,21 @@ a house order. Where it rolls, roll it and take what comes: don't quietly help
 the dice, and don't let a concept get committed to before the dice that would
 contradict it have been thrown.
 
+**Unless the player asks.** "I want to play an antiquarian, can we just set that
+one" is a fine thing to want and the answer is yes, without negotiating it and
+without checking whether they're sure. Nothing is at stake yet — the character
+isn't in play, so a set result costs nothing and buys them the character they
+came to play. The guard is against *you* softening a result, not against them
+choosing one.
+
+Two bounds on that. **Asked for, not offered** — don't propose the fix when a
+roll disappoints them, because volunteering it is the sycophancy the rest of
+this is about. And **it stops at the end of this step.** Once the file is
+deleted, `roll.py` means what it says.
+
+Write down what was set rather than rolled, so a later session reading the sheet
+knows which parts the dice chose.
+
 Come out with the sheet filled in and a couple of sentences of who they are from
 the outside. Step 2 is where that gets deep; here it just needs to exist.
 
@@ -311,7 +326,8 @@ have none of your memory of it.
 
 - **System:**
 - **Rules skill:**
-- **Creation method:** <chosen / generated — which way the arrow pointed>
+- **Creation method:** <how the system does it, and anything set by request
+  rather than rolled>
 
 ## Lines and veils
 
