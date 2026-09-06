@@ -8,7 +8,17 @@
       "Write(notes/**)",
       "Read(playtests/**)",
       "Edit(playtests/**)",
-      "Write(playtests/**)"
+      "Write(playtests/**)",
+      "Bash(rm notes/gm/plans/SESSION-ZERO.md)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "Bash(git push:*)"
     ]
   }
 }
