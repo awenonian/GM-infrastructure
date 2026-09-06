@@ -33,6 +33,24 @@ Concretely, for each party in play: what they want, what they'll do about it
 this week if nobody stops them, and what they'd never do. That gives you a
 principled answer to "what happens next" that isn't invented on the spot.
 
+## A session plan is a list of what moves, not a list of what gets found
+
+**Test every line of a plan: can it be *delivered*?** If it can — a clue, a
+location, a revelation, a scene waiting to be walked into — it is plot prep
+wearing a situation's clothes, and it turns the session into a queue to
+discharge. That is the specific way a second session goes flat: everything in
+it came out of a file, in the order the file listed.
+
+Write what each party *does next* instead, with what sets it off. Then the
+session is made of things happening, and what the player finds is a consequence
+of where they were standing.
+
+The same test applies to the world moving while the player dithers. Something
+happening is not a penalty for hesitating, and it should not be filed as one —
+if the only thing your plan does when they stall is squeeze them, the plan has
+taught itself that hesitation gets punished. Somebody else acting on their own
+want is enough, and it is allowed to help.
+
 **Keep a running list of secrets and clues** — ten or so loose facts that are
 true and not yet revealed, not yet assigned to any particular scene. They are
 the best improvisation fuel there is, because they're consistent by

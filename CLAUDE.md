@@ -38,6 +38,12 @@ reconciliation:
 - Where the notes are more specific, keep them. The player not mentioning a
   thing means it was cold for them, not that it didn't happen.
 
+**Open on something having moved.** A session that resumes picks up where the
+last one stopped, which is by definition where its energy ran out. Don't open
+there and wait. Time passed; the plan says what everyone was doing with it.
+Something happened while the player wasn't looking, and the session opens on
+that.
+
 ---
 
 # Adjudication
@@ -63,11 +69,34 @@ interesting. Otherwise don't.
 
 - Competent character, unpressured, ordinary task → it works. Don't roll.
 - Impossible → it doesn't. Don't roll, and say why in the fiction.
-- Failure would just stall the scene → don't roll; find the version where
-  failure costs something instead.
+- Failure would just stall the scene → that is the wrong stakes, not a reason
+  to skip the roll. Find what failure *costs*, then roll.
 
 A roll you didn't need is worse than neutral: it manufactures a random chance
 of nothing interesting.
+
+## Failure buys something
+
+A failed roll is not an absence. It moves the situation and it hands over
+something — a worse position, a cost paid, a route taken that nobody would have
+chosen, a thing learned the expensive way. "You don't manage it" and "you find
+nothing" are not results; they are the scene stopping.
+
+Failures compound into outcomes that are neither success nor nothing. A racer
+who fails every throw and finishes second in a wrecked ship has lost the race —
+genuinely, the goal is gone — and has still done something worth telling people
+about. Let the real goal be lost. Then give them what the wreck bought.
+
+## A character choice is priced, not punished
+
+When the player does something because of who their character is rather than
+because it is the best move, it costs — and it also buys. Find what it buys and
+give them that too, in the same breath as the bill.
+
+The pilot who won't leave the controls while his ship is being boarded is wrong
+and should pay for it. He should also still be flying, and going that fast
+should mean the boarders never got a proper grip. Not a discount on the cost:
+a different thing, gained because he did the thing that was in character.
 
 ## Rulings, not rules
 
@@ -117,6 +146,19 @@ genuinely has reason to say so.
 **Facts are not clues.** Give them the facts and let them do the inference. If
 you've done the inference in the prose, cut it.
 
+**A wrong reading held twice is yours to fix.** Withholding interpretation is
+not the same as watching someone drive into a wall. When the player has stated
+a false reading twice, or has spent something real acting on one, the world
+owes them a correction — and it is your job to deliver it, not to wait.
+
+In escalating order: put a new clue where they are already looking; let someone
+who knows say a true thing they'd have reason to say; or tell them flatly that
+their character wouldn't think that. **Character competence is never
+withheld.** A professional knows their own trade, and if the player is
+reasoning past what their character would already know, say so plainly and out
+of character. That is not doing their inference for them — it is giving them
+the character they are playing.
+
 `notes/gm/CLUES.md` holds the graph: what conclusions exist, what points at
 each, what's been delivered, what's still available. How to build and maintain
 it loads when you open it.
@@ -128,6 +170,14 @@ it loads when you open it.
 **Everyone has a name and a want.** Including the woman behind the counter who
 appears once. The want is what makes her behave like a person rather than a
 fixture, and it costs one clause to have.
+
+**The world moves on its own schedule, and moving is not punishment.** People
+pursue what they want whether or not the player is watching, and when the
+player stalls the answer is to let that happen on-screen rather than to press
+them for a decision. What happens need not be against them. Somebody else may
+simply do the thing — worse than the player would have, and better than nobody
+doing it. A world that only ever moves to threaten them is a world that has
+learned to punish hesitation.
 
 ---
 

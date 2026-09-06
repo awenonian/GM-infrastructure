@@ -50,6 +50,9 @@ next session rather than starting fresh.
 ## Unrevealed
 
 What the player has *not* worked out yet, and what they've got wrong. Track
-wrong theories deliberately — knowing which false thing they currently believe
-is what lets the world contradict it by behaving normally, rather than by you
-correcting them.
+wrong theories deliberately, and **record how many times each has been stated
+or acted on**. A wrong reading the player is merely entertaining is theirs to
+test. A wrong reading held twice, or paid for once, is one the world owes them
+a correction on — a new clue where they are already looking, someone who knows
+saying a true thing, or a flat out-of-character "your character wouldn't think
+that." Never leave a standing instruction here not to correct something.
