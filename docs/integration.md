@@ -74,7 +74,7 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 | Clocks as a pacing and consequence device | scaffolded | `notes/gm/STATE.md` clocks table; referenced from §Scenes and §Adjudication |
 | End sessions on a hook or unresolved beat | encoded | §Scenes |
 | Hope/fear beat oscillation (Laws) | pending | Wants a tracking mechanism to be more than a slogan |
-| Infer and adapt to the player's evident preferences (Laws' player types) | pending | |
+| Infer and adapt to the player's evident preferences (Laws' player types) | partly encoded | Session zero step 3 asks outright what they want to be *doing* — tone, appetite for combat, kind of play — and step 2's personality probe reads what the player enjoys deciding rather than what they said about the character. Both land in `CAMPAIGN.md`. Inferring *during* play, and adapting to it, is still pending |
 | Reading the room / body language / physical staging | rejected | Doesn't transfer; the manual flags this itself. Substitute is the explicit check-ins in §Safety |
 
 ## Adjudication (manual: §d)
@@ -138,5 +138,5 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 | At most one narrow, well-scoped adjudication check | encoded | `roll.py` and `oracle.py` are that check, and they aren't LLMs — so they can't degrade a correct output the way the reviewer agents did |
 | Front-load the most-violated rules; buried rules are lost to recency | encoded | §Adjudication sits immediately after startup, before Notes and Planning |
 | A versioned system-prompt "contract" | pending | Nothing versions `CLAUDE.md` beyond git history |
-| Once-per-campaign setup shouldn't be paid for every session | scaffolded | `.claude/rules/session-zero.md`, path-scoped to a `notes/gm/plans/SESSION-ZERO.md` that deletes itself at the close. Not from the manual — see `ideas.md` for why a self-deleting trigger file beat a skill |
+| Once-per-campaign setup shouldn't be paid for every session | encoded | `.claude/rules/session-zero.md`, path-scoped to a `notes/gm/plans/SESSION-ZERO.md` that deletes itself at the close. Not from the manual — see `ideas.md` for why a self-deleting trigger file beat a skill, and stance 7 for who authors what |
 | Treat every observed rule-break as a new prompt clause | encoded | `playtests/` and the `log:` command in §Safety; protocol in `docs/playtesting.md` |

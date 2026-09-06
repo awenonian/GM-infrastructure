@@ -207,6 +207,68 @@ long, and discovering three sessions later that it only ever mattered at a
 moment when nothing was open. If you cannot name the file whose reading should
 load a rule, it belongs in `CLAUDE.md`.
 
+## 7. How much of the setting the player authors → **the player authors their situation; the GM authors the world and what's under it**
+
+A split by layer, like stances 1, 2 and 3, and for the same reason: the two
+halves fail differently.
+
+- **The player authors what their character is embedded in** — who they know,
+  what they owe, where they're from, what they want and how they mean to get
+  it, and what kind of play they're actually here for.
+- **The GM authors the world and everything true underneath** — what the place
+  is, who has power, what's really going on, who is lying. Privately, and in
+  `notes/gm/`.
+
+### Why not more player authorship
+
+The collaborative-worldbuilding traditions build the setting at the table on
+purpose, and their argument is good: a player invested in a world they helped
+make. But **every fact the player authored is a fact they can't find out**, and
+discovery is what this player said they came for. Spend enough of the setting
+that way and the campaign is a tour of a place they already have the map to.
+
+Note what the split protects: a character's own debts, history and connections
+were never discoverable *by that character* anyway. They'd know them. So the
+player authoring them costs no discovery at all — it is the one layer that's
+free to give away, which is exactly why it's the layer that's given.
+
+### Why not less
+
+`docs/ideas.md` names the two failures this mode exists to fix, and both are
+failures of too little: a character built in isolation that doesn't fit the
+story, and a story the player doesn't care about. Neither is fixed by a better
+world. They're fixed by building the world *second*, against a character and a
+stated appetite that already exist. Session zero's step order is this stance
+made procedural.
+
+### The bound: the underneath must not invalidate what they wrote
+
+The private layer is where this stance can quietly turn on the player. The
+reflex is to make their contribution secretly false — the dead brother is
+alive, the mentor is the villain, the debt was a setup. It is always available,
+it feels like a twist, and it converts the one thing they authored into a trick
+played on them. That is the *opposite* of the second-store argument for doing
+this at all.
+
+The good move is to find what else is true about the thing that makes it
+heavier. They handed you something they care about; make it matter more, not
+less.
+
+### What this doesn't license
+
+It doesn't make the GM a consultant during session zero. The player's requests
+are direction and constraint, not a specification to implement — a world
+assembled from everything they suggested has nothing in it they don't know,
+which is the same emptiness by a different route. "You decide" is an answer to
+act on, not an invitation to ask smaller questions until content falls out.
+
+*Sources:* the collaborative traditions (Fate/Dresden city creation, PbtA "ask
+questions and use the answers") — adopted for the character's own situation,
+rejected for the setting on the discovery argument. Traditional/OSR
+GM-authored setting — adopted for the world, and bounded by the fit check in
+session zero step 3, which is what stops "GM-authored" from meaning "authored
+before the player existed."
+
 ---
 
 ## Revisiting these

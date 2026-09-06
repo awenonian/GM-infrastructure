@@ -167,8 +167,10 @@ extra state machine. And re-running it later (a second character, a new arc) is
 just recreating the file; the rule's guard asks whether that was deliberate
 rather than assuming it wasn't.
 
-**Status.** Scaffolding built — trigger, rule, worksheet, close, and the
-authorship boundary. The procedure itself is stubbed, and the rule refuses to
-improvise one and delete itself. That's the next piece of work, along with the
-stance on how much of the setting the player authors.
+**Status.** Built. `.claude/rules/session-zero.md` carries the four-step
+procedure — character mechanically, who they are, the world built onto them,
+finalise — and stance 7 records the authorship split it turns on. Untested: no
+playtest has run it, and the two things most likely to be wrong are its length
+in practice and whether the fit check at the end of step 3 actually catches a
+mismatch or just describes one.
 
