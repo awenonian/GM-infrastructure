@@ -18,17 +18,22 @@ last week reads the notes and picks up where you left off.
    > *"Let's play Starfinder, starting from character creation."*
    >
    > *"ACKS, with this character: …"*
-   >
-   > *"Resuming from last session."*
 
-3. **Play.** From the second session on, open with a short recap of where you
+3. **Session zero happens first.** A fresh copy carries a
+   `notes/gm/plans/SESSION-ZERO.md`, and the GM opens by reading it: character,
+   connections, what you actually want to be playing, and lines and veils, all
+   settled out in the open before any of it is prepped. It deletes itself when
+   you're done, and the campaign starts.
+
+4. **Play.** From the second session on, open with a short recap of where you
    think you left off — off the cuff is fine, lossy is expected. That recap is
    information the notes structurally can't hold, and the GM is told to trust
    it over its own notes where the two disagree.
 
-That's the whole ritual — there is no setup step. A fresh copy is playable as
-created, including from a phone: the dice and oracle are pre-approved, and the
-notes the GM needs are already scaffolded.
+That's the whole ritual — there is nothing to configure. A fresh copy is
+playable as created, including from a phone: the dice and oracle are
+pre-approved, the notes the GM needs are already scaffolded, and the setup step
+is something you play rather than something you fill in.
 
 Everything else is in `CLAUDE.md`, which Claude Code loads automatically.
 
@@ -61,7 +66,7 @@ playing.
 | `scripts/roll.py` | Dice. |
 | `scripts/oracle.py` | The oracle — yes/no questions, scene checks, random events. The part of the game the GM doesn't control. |
 | `docs/` | How the GM was built: research, the integration tracker, and the stances taken where the sources disagree. Not part of the game. |
-| `.claude/settings.json` | Pre-approves rolling dice and writing to `notes/`, so play isn't interrupted by permission prompts. Delete it if you'd rather approve each one. |
+| `.claude/settings.json` | Pre-approves rolling dice, writing to `notes/`, and the git commands that get a session's notes onto the default branch — so play isn't interrupted by permission prompts. Delete it if you'd rather approve each one. |
 
 `CLAUDE.md` is deliberately system-agnostic — it's about running a game, not
 about any particular game. The rules of whatever you're playing come from a

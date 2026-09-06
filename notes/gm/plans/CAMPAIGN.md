@@ -1,7 +1,7 @@
 # Campaign
 
-Fill this in from the player's first message, so that no later session has to
-ask again.
+Filled in at the close of session zero, so that no later session has to ask
+again. If session zero was skipped, fill it in from the player's first message.
 
 - **System:**
 - **Started from:** <character creation / an existing character / mid-campaign>
