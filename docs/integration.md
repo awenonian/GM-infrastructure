@@ -138,5 +138,5 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 | At most one narrow, well-scoped adjudication check | encoded | `roll.py` and `oracle.py` are that check, and they aren't LLMs — so they can't degrade a correct output the way the reviewer agents did |
 | Front-load the most-violated rules; buried rules are lost to recency | encoded | §Adjudication sits immediately after startup, before Notes and Planning |
 | A versioned system-prompt "contract" | pending | Nothing versions `CLAUDE.md` beyond git history |
-| Once-per-campaign setup shouldn't be paid for every session | encoded | `.claude/rules/session-zero.md`, path-scoped to a `notes/gm/plans/SESSION-ZERO.md` that deletes itself at the close. Not from the manual — see `ideas.md` for why a self-deleting trigger file beat a skill, and stance 7 for who authors what |
+| Once-per-campaign setup shouldn't be paid for every session | encoded | `.claude/rules/session-zero.md`, path-scoped to a `notes/gm/plans/SESSION-ZERO.md` that deletes itself at the close. Not from the manual — see `ideas.md` for why a self-deleting trigger file beat a skill, and stance 7 for the appetite/circumstance split it runs on |
 | Treat every observed rule-break as a new prompt clause | encoded | `playtests/` and the `log:` command in §Safety; protocol in `docs/playtesting.md` |

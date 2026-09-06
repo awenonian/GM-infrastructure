@@ -61,23 +61,30 @@ establish it.
 
 ## The authorship boundary
 
-The player authors **what their character is embedded in** — who they know, what
-they owe, where they're from, what they want and how they mean to get it. You
-author **the world it sits in, and everything true underneath**, privately, and
-they don't see that half.
+The player authors **what would move this character** — what they care about,
+what they're working towards and how, how they behave under a choice, and who is
+already in their life. You author **what actually turns up in front of them**:
+the world, the situations, and everything true underneath.
 
-Stance 7 has the reasoning. The short version: their own debts and history were
-never discoverable by that character anyway, so giving them away costs no
-discovery — and the world's truths are what discovery is made of.
+Note where that line is *not*. It isn't "their things and your things." You are
+expected to build situations that reach right into the character's life and use
+the people in it — aimed by what they told you in step 2. Aiming is the job.
+What they control is what would move this character; what you control is what
+happens.
+
+Stance 7 has the reasoning. The short version: what a character wants was never
+discoverable by that character anyway, so giving it away costs no discovery,
+while the world's truths are what discovery is made of.
 
 Get that split wrong in either direction and the mode fails. Too much player
 authorship and there is nothing left to find out. Too little and it is ordinary
 prep with a conversation stapled to the front.
 
-Concretely: when they hand you a debt, a rival, a hometown, or a reason they
-left, you take it as given and then decide — in `notes/gm/` where they can't
-see — what is true about it that they don't know. That decision is yours alone
-and it happens at the moment they hand the thing over, not later.
+Concretely: when a debt, a rival, a hometown or a reason they left enters the
+conversation — offered by them, or proposed by you and accepted — you decide, in
+`notes/gm/` where they can't see, what is true about it that they don't know.
+That decision is yours alone and it happens at the moment the thing lands, not
+later. The bound on it is at the end of step 3.
 
 ## How to run it
 
@@ -120,22 +127,18 @@ world does, so the world gets built to fit them instead of the other way round.
 
 ### 1. The character, mechanically
 
-Load the rules skill for the system if one is available and follow the system's
-own character creation. What you remember about it is probably wrong in ways
-you won't notice.
+Load the rules skill for the system if one is available and run the system's own
+character creation, however it does it. What you remember about it is probably
+wrong in ways you won't notice.
 
-**Which direction the arrow points varies by system, and it matters:**
-
-- **Where the player chooses** — classes, point-buy, playbooks — the concept
-  comes first. Get a sentence of who this is, then build toward it. A build
-  picked first and explained afterwards gives you a character the player is
-  describing rather than one they want.
-- **Where the system generates** — 3d6 in order, lifepaths, random tables — the
-  rolls come first and step 2 reads them. Don't let the player commit to a
-  concept the dice are about to contradict, and don't quietly help the dice.
+Systems vary in how much of the character this step decides — some hand the
+player every choice, some generate most of it — so follow the book rather than
+a house order. Where it rolls, roll it and take what comes: don't quietly help
+the dice, and don't let a concept get committed to before the dice that would
+contradict it have been thrown.
 
 Come out with the sheet filled in and a couple of sentences of who they are from
-the outside.
+the outside. Step 2 is where that gets deep; here it just needs to exist.
 
 ### 2. Who this character is
 
@@ -162,18 +165,30 @@ behaves under a choice, and what this *player* enjoys deciding. The second is
 worth more.
 
 **d. Connections.** Who they know, what they owe and who owes them, where
-they're from, who they'd avoid. This isn't in the draft of the sheet and it's
-the most useful thing on this list: connections are what the world in step 3
-attaches to, and a character with none of them has to be dragged into every
-scene. Three or four is plenty. Names, not roles.
+they're from, who they'd avoid. Three or four is plenty. Names, not roles.
+
+This is the most useful thing on the list — connections are what the world in
+step 3 attaches to, and a character with none has to be dragged into every
+scene.
+
+**Unlike the rest of step 2, this one is shared.** A connection is an NPC, and
+NPCs are yours. So offer: propose people, supply names, suggest the kind of
+person this character would plausibly have in their life and see if it lands.
+A player who can't think of anyone will take a suggestion gladly, and one who
+already has someone will tell you. Their character's relationships are still
+theirs to refuse — you're contributing, not assigning.
+
+If you don't have enough world yet to suggest from, sketch loosely here and
+finish them in step 3, once there's a place for them to be from.
 
 **Your side of step 2.** Write down, in `notes/gm/` terms: what pressure would
 actually move this character, and what they would never do. That's INTENTION,
 and having it now means the world can be built to press on it.
 
 And for each connection, decide what's true about it that the player doesn't
-know — now, while you can see why they offered it. That's the boundary above,
-and it is the first real prep of the campaign.
+know — now, while you can still see why it landed the way it did. That's the
+boundary above, and it is the first real prep of the campaign. A connection you
+proposed yourself needs this as much as one they brought.
 
 ### 3. The world
 
@@ -226,6 +241,14 @@ This is the piece that makes proactive play possible. A player who wants to act
 first needs something to act *on*, and a world that is only a description makes
 them go looking for the adventure hook instead.
 
+**Aim it at what they said they cared about. That's the job, not an overstep.**
+Step 2 told you what moves this character; a situation chosen to move them is
+what that information is *for*. A character who wants to protect people is not
+interested in "there's gold down that road" and is very interested in a village
+being attacked — so put the village there. Building the second one is not
+authoring the player's character. It is authoring the world in front of it,
+which is yours (stance 7), and doing it well means doing it on purpose.
+
 **Last, say where you think they'll get pulled — and where you have nothing.**
 Plainly, out of character, before anything is finalised:
 
@@ -242,12 +265,34 @@ decide what is true underneath it and write it in `notes/gm/` where they can't
 see. Not "something is going on at the harbour" — what is going on, who is
 lying, and what they want. That is stance 1's resolution rule, applying now.
 
-**One thing to get right about the underneath:** it should make what the player
-authored matter *more*, not turn it into a trick played on them. The reflex —
-their dead brother is alive, their mentor is the villain, the debt was a setup —
-is available and it is almost always the worse answer. They handed you a thing
-they care about. The good move is to find what else is true about it that makes
-it heavier, not to reveal that it was never what they said.
+**And be careful about what you put under what they authored.** The mentor is
+the villain; the dead brother is alive; the debt was a setup. These work — they
+are twists people write on purpose and enjoy. They are also the reflex, they
+feel large at the moment of invention, and this is the one layer of session zero
+the player has no check on. Everything else here they can push back on while
+it's happening; the underneath they meet already built.
+
+So don't ban the move, test it. Four questions, and a no to any of them is the
+warning:
+
+- **Does the played history survive?** A twist may change what a thing *meant*.
+  It shouldn't delete that it *was*. The mentor being a villain leaves the
+  training real and the affection real, and reframes both. The mentor never
+  having existed takes them away.
+- **Is it discoverable?** Could a player looking back find that the evidence was
+  there? That's the three-clue rule and the telegraphing rule arriving early —
+  and if the answer is no, the fix isn't a different secret, it's planting the
+  clues now, in step 3, while you're still building.
+- **Does it feed the engine or eat it?** They told you what this character is
+  after in step 2b. A reveal that removes the thing they came to do costs them
+  the campaign. One that complicates it hands them more of it. Brother alive:
+  the search is over. Killer turns out to be someone they already named:
+  the search just got much worse. Same trope, opposite effect.
+- **Do they find it, or does it arrive?** Uncovered by acting on their own wants
+  is earned. Delivered on your schedule is done to them.
+
+The reliable version of this is the same either way: what you put underneath
+should make what they wrote *matter more*. Heavier, not falser.
 
 ### 4. Finalise
 
@@ -282,7 +327,7 @@ have none of your memory of it.
 
 <what they care about; what they're working towards, and by what method>
 
-## Connections              <!-- theirs. Names, not roles. -->
+## Connections              <!-- shared. Names, not roles. -->
 
 <who they know, what they owe, who owes them, who they'd avoid>
 

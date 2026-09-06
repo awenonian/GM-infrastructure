@@ -207,67 +207,87 @@ long, and discovering three sessions later that it only ever mattered at a
 moment when nothing was open. If you cannot name the file whose reading should
 load a rule, it belongs in `CLAUDE.md`.
 
-## 7. How much of the setting the player authors → **the player authors their situation; the GM authors the world and what's under it**
+## 7. How much of the setting the player authors → **the player authors what their character wants; the GM authors what gets put in front of it**
 
-A split by layer, like stances 1, 2 and 3, and for the same reason: the two
-halves fail differently.
+The same shape as stances 1, 2 and 3 — a split by layer rather than a point on
+the dial — and the layer it splits on is *appetite versus circumstance*.
 
-- **The player authors what their character is embedded in** — who they know,
-  what they owe, where they're from, what they want and how they mean to get
-  it, and what kind of play they're actually here for.
-- **The GM authors the world and everything true underneath** — what the place
-  is, who has power, what's really going on, who is lying. Privately, and in
-  `notes/gm/`.
+- **The player authors the character's appetites.** What they care about, what
+  they're working towards and by what method, how they behave under a choice,
+  and the people already in their life.
+- **The GM authors everything put in front of that.** The world, the situations,
+  what is actually true underneath — including situations that reach straight
+  into the character's life and use the people in it.
+
+### The line is not "their stuff vs. your stuff"
+
+That was the wrong cut, and it's the one to guard against re-drawing, because
+it sounds more respectful. It would make the GM ask permission before anything
+touched the character, which produces exactly the passive campaign this mode
+exists to prevent.
+
+A character who wants to protect people is bored by "there is gold down that
+road" and gripped by a village being attacked. Putting the village there is not
+authoring their character. It is authoring the world in front of it, aimed by
+what they told you — and aiming it is the job. **What the player controls is
+what would move this character. What the GM controls is what actually turns up.**
+
+This is stance 2's "fan in the framing" arriving one layer earlier. Choosing
+the situation that grabs this particular character changes what we look at, not
+what is true, so it costs the impartiality nothing.
 
 ### Why not more player authorship
 
-The collaborative-worldbuilding traditions build the setting at the table on
-purpose, and their argument is good: a player invested in a world they helped
-make. But **every fact the player authored is a fact they can't find out**, and
-discovery is what this player said they came for. Spend enough of the setting
-that way and the campaign is a tour of a place they already have the map to.
+The collaborative-worldbuilding traditions build the setting at the table and
+their argument is good: investment in a world you helped make. But **every fact
+the player authored is a fact they can't find out**, and discovery is what this
+player said they came for. Spend enough of the setting that way and the campaign
+is a tour of a place they already have the map to.
 
-Note what the split protects: a character's own debts, history and connections
-were never discoverable *by that character* anyway. They'd know them. So the
-player authoring them costs no discovery at all — it is the one layer that's
-free to give away, which is exactly why it's the layer that's given.
+The appetites are the layer that's free to give, and that's why they're given.
+What a character wants was never discoverable *by that character* — they already
+know. Handing it to the player costs no discovery at all, and buys the thing
+`ideas.md` wanted: a player whose stakes and wants the world can push against.
 
 ### Why not less
 
-`docs/ideas.md` names the two failures this mode exists to fix, and both are
-failures of too little: a character built in isolation that doesn't fit the
-story, and a story the player doesn't care about. Neither is fixed by a better
-world. They're fixed by building the world *second*, against a character and a
-stated appetite that already exist. Session zero's step order is this stance
-made procedural.
+`ideas.md` names the two failures this mode fixes and both are failures of too
+little: a character built in isolation that doesn't fit the story, and a story
+the player doesn't care about. Neither is fixed by a better world. Both are
+fixed by building the world *second*, against appetites that already exist.
+Session zero's step order is this stance made procedural.
 
-### The bound: the underneath must not invalidate what they wrote
+### Connections are a shared band, deliberately
 
-The private layer is where this stance can quietly turn on the player. The
-reflex is to make their contribution secretly false — the dead brother is
-alive, the mentor is the villain, the debt was a setup. It is always available,
-it feels like a twist, and it converts the one thing they authored into a trick
-played on them. That is the *opposite* of the second-store argument for doing
-this at all.
+The people in a character's life are the one thing that sits on both sides:
+they're the player's history and they're the GM's NPCs. So session zero has the
+GM propose as well as ask — supplying names, suggesting who this character would
+plausibly have around them. The player keeps refusal over their own
+relationships; the GM keeps everything true about the people.
 
-The good move is to find what else is true about the thing that makes it
-heavier. They handed you something they care about; make it matter more, not
-less.
+That shared band is not a fudge. It is where the two halves are supposed to be
+welded, and a campaign where the GM only ever received connections and never
+offered any would have a thinner world for it.
 
-### What this doesn't license
+### The bound: what you put underneath
 
-It doesn't make the GM a consultant during session zero. The player's requests
-are direction and constraint, not a specification to implement — a world
-assembled from everything they suggested has nothing in it they don't know,
-which is the same emptiness by a different route. "You decide" is an answer to
-act on, not an invitation to ask smaller questions until content falls out.
+The underneath is the only layer of session zero the player never gets to push
+back on — everything else they can argue with while it happens. So the reflex
+twist deserves suspicion in proportion: the mentor is the villain, the dead
+brother is alive, the debt was a setup. These are real moves that work, not
+forbidden ones, and the tests are in `rules/session-zero.md`: does the played
+history survive, is it discoverable, does it feed what they came to do or
+remove it, and do they find it or does it arrive.
+
+The reliable form: what's underneath should make what the player wrote matter
+*more*. Heavier, not falser.
 
 *Sources:* the collaborative traditions (Fate/Dresden city creation, PbtA "ask
-questions and use the answers") — adopted for the character's own situation,
-rejected for the setting on the discovery argument. Traditional/OSR
-GM-authored setting — adopted for the world, and bounded by the fit check in
-session zero step 3, which is what stops "GM-authored" from meaning "authored
-before the player existed."
+questions and use the answers") — adopted for the character's appetites and
+connections, rejected for the setting on the discovery argument.
+Traditional/OSR GM-authored setting — adopted for the world and the situations,
+and bounded by the fit check in session zero step 3, which is what stops
+"GM-authored" from meaning "authored before the player existed."
 
 ---
 
