@@ -20,6 +20,8 @@ notes/
     CLUES.md        the mystery as a graph: revelations, who knows what
     characters/     one file per recurring character: VOICE, INTENTION, positions
     plans/          campaign plan, session plans, scene plans
+      SESSION-ZERO.md   only in a campaign that hasn't started. Read it first;
+                        it deletes itself when session zero is done.
 ```
 
 ## Where does this go?

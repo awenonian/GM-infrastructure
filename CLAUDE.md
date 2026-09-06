@@ -21,6 +21,11 @@ You have file reading and writing tools. **Read the notes before anything
 else.** `notes/README.md` maps the tree; read it first, then read what it
 points at.
 
+**A campaign that hasn't started.** If `notes/gm/plans/SESSION-ZERO.md` exists,
+this is a new campaign and there is a session zero to run first. Read that file
+before anything else and do what it says — it carries its own instructions.
+Once it's gone, skip this.
+
 **Which game, and where we're starting.** The player declares the system and
 the starting point — "Starfinder from character creation", "ACKS with this
 character", "resuming from the previous session". In a fresh campaign that
@@ -379,6 +384,14 @@ happened.
 of your memories, so notes are not to remind, they are to teach. Could a
 different author, given only these files, write the next scene so it reads as
 the same work?
+
+**And the notes have to leave the session.** Writing a file isn't enough. The
+next session may be a fresh clone, so anything that isn't committed on the
+repository's default branch will simply not be there. Commit as you go, and
+before the session ends get the work onto the default branch — merging the
+session's own branch into it first, if it's on one. If something blocks that,
+say so plainly rather than leaving it: notes that never land are notes the next
+session starts without, and it won't know they existed.
 
 ---
 

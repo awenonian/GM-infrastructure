@@ -132,6 +132,43 @@ find out, too little and it is just prep with extra steps.
 **Also absorbs** the lines-and-veils conversation, which `CLAUDE.md` currently
 hangs off "on a first session."
 
-**Status.** Deferred deliberately. Test the current design first — this mode is
-different enough that building it now would mean testing two things at once.
+## How it's wired
+
+The mode is triggered by a **file that deletes itself**, not by a skill. The
+skill instinct above was right about the cost and wrong about the firing.
+
+- `notes/gm/plans/SESSION-ZERO.md` ships in the template. Its *existence* is
+  the flag for "this campaign hasn't started". It's also the worksheet: the GM
+  writes into it during session zero, distributes the content into the
+  permanent notes at the close, and deletes it. Gone means it never fires
+  again.
+- `.claude/rules/session-zero.md` is path-scoped to exactly that file, so the
+  procedure can be as long as it needs to be and costs nothing from the second
+  session onward, when the path stops matching.
+- One paragraph in `CLAUDE.md` § Starting up points at the file if it exists.
+  That is the entire permanent cost, and it self-cancels.
+
+**Why not a skill.** Skills fire on description-matching, which is
+probabilistic, and the one moment this must fire is the moment the GM has the
+least context to match against — turn one of a cold repo. A skill also doesn't
+retire: it sits in the campaign forever and can trip in session nine. The rule
+gets skill-like laziness from a path that only ever matches once, with
+deterministic firing.
+
+**Why it beats putting the procedure in `CLAUDE.md`.** Beyond stance 6 — a
+long session-zero conversation will compact, and root `CLAUDE.md` is the only
+thing re-injected. But a path rule reloads on *every* matching read, and the
+worksheet is the GM's working document during the mode. The procedure
+re-injects itself for free, which the root file's guarantee does not do.
+
+**Two things it gets for nothing.** A session zero interrupted halfway leaves a
+partly-filled worksheet, which the next session reads and resumes from — no
+extra state machine. And re-running it later (a second character, a new arc) is
+just recreating the file; the rule's guard asks whether that was deliberate
+rather than assuming it wasn't.
+
+**Status.** Scaffolding built — trigger, rule, worksheet, close, and the
+authorship boundary. The procedure itself is stubbed, and the rule refuses to
+improvise one and delete itself. That's the next piece of work, along with the
+stance on how much of the setting the player authors.
 
