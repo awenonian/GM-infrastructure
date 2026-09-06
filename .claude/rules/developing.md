@@ -81,6 +81,12 @@ else.
 files in `notes/` are the starting state of every campaign made from it. If a
 campaign's content lands in one, it becomes someone else's opening canon.
 
+One deliberate exception: `notes/player-owned/LINES-AND-VEILS.md` ships filled
+in. It isn't play content — it's the player's standing preference, it doesn't
+change between campaigns, and shipping it is the whole point, because a new
+campaign inheriting it settled is what stops session zero having the
+conversation every time. Don't empty it out on the rule above.
+
 ## The thing to be suspicious of
 
 Most of `CLAUDE.md` exists to stop a model handing the player whatever they

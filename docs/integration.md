@@ -124,7 +124,7 @@ Where a row says "stance", the reasoning is in `stances.md`, not here.
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Lines and veils, negotiated before play | encoded | Set in `notes/gm/plans/CAMPAIGN.md`, not negotiated in session — playtest 01 showed the negotiation eating the opening. §Safety says read, don't ask. Where they get *set* moves into session zero, which is a before-play conversation and the right home for it |
+| Lines and veils, negotiated before play | encoded | `notes/player-owned/LINES-AND-VEILS.md` — the player's, durable across campaigns, and shipped with the template so a new campaign inherits them settled. §Safety says read, don't ask; session zero step 0 reads them before it generates anything. Two bugs from the first run drove this: they were per-campaign so every game re-asked, and asking at the world step meant the character work was already done and had to be unpicked |
 | X-card as an always-available explicit command | partly rejected | §Safety keeps "obey an out-of-character stop without negotiating". The rewind half is dropped: the client's rollback removes turns outright, which beats a GM un-narrating, so the prompt was shipping a worse copy of a feature the player already had (playtest 01) |
 | Script change — rewind / pause / fast-forward | rejected | Provided by the client's rollback control, better than the prompt can. The manual's note that an AI "can literally rewind and re-narrate" is true and still the wrong build (playtest 01) |
 | Explicit out-of-character check-in channel | encoded | §Safety |

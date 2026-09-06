@@ -18,6 +18,10 @@ Game Master starts when this file is deleted.
 Dice are the exception, and only in step 1: where the system says to roll for
 something during creation, roll it with `scripts/roll.py` like anything else.
 
+Safety is the other thing that carries over unchanged. Read
+`notes/player-owned/LINES-AND-VEILS.md` before you generate anything — step 0
+below — and an out-of-character "stop" is obeyed here exactly as it is in play.
+
 ## First: is this actually a new campaign?
 
 Look at `notes/player-facing/RECORD.md` and `notes/gm/plans/CAMPAIGN.md`. If
@@ -122,8 +126,32 @@ runs long, the worksheet is the save point and stopping is fine.
 
 ## The procedure
 
-Four steps, in order. The order is the point: the character exists before the
-world does, so the world gets built to fit them instead of the other way round.
+Four steps and a read that comes before them. The order is the point: the
+character exists before the world does, so the world gets built to fit them
+instead of the other way round — and nothing at all gets built before step 0.
+
+### 0. Read the lines and veils
+
+**Before anything else — before the sheet, before a single question.** They are
+in `notes/player-owned/LINES-AND-VEILS.md`, already settled, carried in from the
+template. Read them and hold them for the rest of this conversation.
+
+**Don't ask.** Same rule as `CLAUDE.md` § Safety: they're set by editing that
+file, and "none recorded" is an answer rather than a gap. The one exception is
+if they *are* "none recorded" — then say so once, in a sentence, and carry on
+whatever the reply:
+
+> "Nothing's recorded in lines and veils — that's a normal setting, just
+> flagging it. Anything you want kept out before I start?"
+
+Ask that once and never again. If they add something, write it into that file
+now, not into the worksheet: it outlasts this campaign.
+
+**Why this is step 0 and not part of the world step.** Session zero generates
+content from its first minute — a personality probe, a piece of backstory, a
+connection with a debt behind it. Every one of those can land on a line, and a
+line that arrives afterwards means unpicking what's already been agreed. Ask
+late and you are editing; read first and you are just building.
 
 ### 1. The character, mechanically
 
@@ -207,16 +235,7 @@ proposed yourself needs this as much as one they brought.
 
 ### 3. The world
 
-**Open with lines and veils.** Ask before there is any content to remove — it's
-cheapest here, and it isn't a mood-breaker in a conversation that is already out
-of character. Briefly, once:
-
-> "Before I build anything — anything you want kept out of this entirely, or
-> kept off-page? 'Nothing' is a normal answer."
-
-Write down whatever they say, "none" included, and move on. Don't revisit it.
-
-**Then ask what they want to be *doing*.** This is a different question from
+**Open by asking what they want to be *doing*.** This is a different question from
 what the world is like and it is the one that most often goes unasked. Digging
 things up, planning jobs, politics, exploring, fighting a war, a dungeon. Tone —
 grim, pulpy, funny, some mixture. How much combat they actually want. Whether
@@ -329,12 +348,6 @@ have none of your memory of it.
 - **Creation method:** <how the system does it, and anything set by request
   rather than rolled>
 
-## Lines and veils
-
-- **Lines:**
-- **Veils:**
-  <"none" is an answer. Write it either way.>
-
 ## The character            <!-- theirs -->
 
 <the sheet, or where it lives, and two sentences of who they are>
@@ -377,7 +390,6 @@ this file is gone. Do all of it:
    | Worksheet section | Goes to |
    |---|---|
    | System, rules skill, creation method | `notes/gm/plans/CAMPAIGN.md` |
-   | Lines and veils | `CAMPAIGN.md`, replacing "none recorded" |
    | What the player wants | `CAMPAIGN.md` § The long shape |
    | The character | `notes/player-owned/` |
    | Motivations, goals, personality | the character's file in `notes/gm/characters/` — goals and method under INTENTION |

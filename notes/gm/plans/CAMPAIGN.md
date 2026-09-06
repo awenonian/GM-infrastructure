@@ -10,19 +10,11 @@ again. If session zero was skipped, fill it in from the player's first message.
 
 ## Lines and veils
 
-**Settled. The GM does not ask about this at the start of a session.** Lines
-stay out entirely; veils can exist but happen off-page.
+In `notes/player-owned/LINES-AND-VEILS.md`, not here — they're the player's and
+they outlast any one campaign, so they travel with the template instead of being
+re-settled per game.
 
-- **Lines:** none recorded
-- **Veils:** none recorded
-
-"None recorded" is the setting, not an unanswered question. The live safety
-mechanisms don't depend on anything being written here: the player can stop or
-rewind anything at any moment, and the GM checks in before and after a scene
-that goes somewhere heavy.
-
-To change this, edit the two lines above — the player owns this section, and the
-GM writes into it when they say something in play.
+Anything *this campaign* adds to them goes in that file too, not in this one.
 
 ## Table commands
 

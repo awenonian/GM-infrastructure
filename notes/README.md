@@ -10,6 +10,7 @@ just the map.
 ```
 notes/
   player-owned/     the player's, not yours. Don't edit without permission.
+    LINES-AND-VEILS.md  settled, durable across campaigns. Read, never ask.
   player-facing/    what the player knows, or what people in the world know.
     RECORD.md       what happened, in play order, append-only, never tidied
     STATE.md        the ledger of known things
@@ -33,6 +34,7 @@ notes/
 | Something a character committed to | `player-facing/POSITIONS.md`, and the character's own file |
 | A line a character actually said | the character's file, verbatim, under VOICE |
 | What a character wants, or would never do | the character's file, under INTENTION |
+| Something the player wants kept out, or kept off-page | `player-owned/LINES-AND-VEILS.md` — never a campaign file |
 | A question raised and not yet answered | `gm/THREADS.md`, marked open |
 | A clue, or a conclusion it points at | `gm/CLUES.md` |
 | A fact that's true but not yet revealed | `gm/CLUES.md`, under loose clues |
