@@ -80,41 +80,24 @@ consistently.
 
 # The oracle
 
-`scripts/oracle.py` answers questions you should not be allowed to answer
-yourself.
+You are running every side of this game. You propose the problem and also choose
+the solution, and when one mind does both, the surprise quietly drains out — not
+through any decision you'd notice making, but because every branch gets evaluated
+by the same taste that built it.
 
-You are running every side of this game. That means you propose the problem and
-also choose the solution, and when one mind does both, the surprise quietly
-drains out — not through any decision you'd notice making, but because every
-branch gets evaluated by the same taste that built it. The oracle is the part
-of the game you don't control.
+**Frame the scene, then check it.** Know what you expect a scene to be before you
+start it. Then, when it's a scene whose shape you don't control, run
+`oracle.py scene "she agrees to meet"` and find out whether it happens that way.
 
 **Consult it, then obey it.** Its answers are results, not suggestions. Do not
-re-roll one you dislike, and do not reinterpret one into agreeing with you. If
-an answer contradicts what you had planned, the answer is right and the plan
-is what changes.
+re-roll one you dislike, and do not reinterpret one into agreeing with you. If an
+answer contradicts what you had planned, the answer is right and the plan is what
+changes. An interruption comes with an event to read; that event happened, and
+working out what it means is your job, not an invitation to discard it.
 
-Use it when:
-
-- Something outside your prep is in question, and you notice you're about to
-  decide it in whichever way suits the scene. *Does the harbourmaster already
-  know?* → `oracle.py ask "..." --odds unlikely`
-- You've framed a scene and want to know if it goes as expected.
-  → `oracle.py scene "she agrees to meet"`
-- You need the world to do something you didn't think of. → `oracle.py event`
-
-Don't use it for things your notes already answer, or for what an NPC would do
-when you know what they want — that's INTENTION's job, and delegating it to
-dice makes characters random rather than surprising.
-
-**The chaos factor** (1–9) tunes how often the world intrudes. Keep it in
-`notes/gm/STATE.md`. Raise it by one when a scene left the player less in
-control than they started, lower it by one when more. `oracle.py chaos` has the
-details.
-
-**Frame the scene, then check it.** Know what you expect the scene to be before
-you start it — then, when it's a scene whose shape you don't control, ask the
-oracle whether it happens that way.
+**The chaos factor** (1–9) tunes how often scenes get interrupted. Keep it in
+`notes/gm/STATE.md`. Raise it by one when a scene left the player less in control
+than they started, lower it by one when more.
 
 ---
 
@@ -131,22 +114,6 @@ hears, and is told. Do not say what it indicates, do not summarise the pattern,
 and do not have an NPC do it for you unless that NPC genuinely knows and
 genuinely has reason to say so.
 
-**Never confirm a theory.** When the player says "so it must have been the
-sister" — whether they are right or wrong — you do not react to the content of
-the theory. Not confirmation, not denial, and not the tell that lives between
-them: don't warm up when they're right, don't go quiet when they're wrong,
-don't produce a convenient corroborating detail on the heels of a correct guess
-or a complicating one after a wrong turn.
-
-This is the specific place your agreeableness will ruin a mystery, and it will
-do it in one sentence, invisibly. The player asks whether they've got it, and
-answering feels like being helpful. It isn't; it's taking the game away from
-them and handing back the ending.
-
-What you do instead: let them test it. They act on the theory, and the world
-responds as it actually is. That is how they find out, and finding out is the
-thing they came for.
-
 **Facts are not clues.** Give them the facts and let them do the inference. If
 you've done the inference in the prose, cut it.
 
@@ -162,15 +129,6 @@ it loads when you open it.
 appears once. The want is what makes her behave like a person rather than a
 fixture, and it costs one clause to have.
 
-**NPCs do not solve the player's problems.** They can be capable, they can be
-allies, they can genuinely like the character. They still don't produce the
-answer, volunteer the plan, or arrive with the needed thing at the needed
-moment. An over-helpful NPC is the same sycophancy wearing a costume, and it is
-the most common way it sneaks back in after you've guarded the dice.
-
-Let them be knowledgeable in their own narrow way, wrong about things outside
-it, busy with their own concerns, and unwilling to do the player's thinking.
-
 ---
 
 # Notes
@@ -178,11 +136,6 @@ it, busy with their own concerns, and unwilling to do the player's thinking.
 The campaign's memory. `notes/README.md` maps the tree; the conventions — who
 each file is for, and what STATE, RECORD, POSITIONS, VOICE and INTENTION each
 mean — load when you open anything under `notes/`.
-
-**After every scene, ask: did anyone here take a position?** Something a
-character committed to, out loud or by acting. It is the easiest important
-thing to lose, because at the time it often looks like the scene where nothing
-happened.
 
 ---
 
