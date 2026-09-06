@@ -12,8 +12,8 @@ does next and what sets it off; let what the player finds follow from where
 they were standing.
 
 That includes what happens if they stall. The world moving is not a penalty for
-hesitating — somebody else acting on their own want is enough, and it is
-allowed to help them.
+hesitating: other people acting on their own wants is what makes them people
+rather than set dressing, and what they do is allowed to help.
 
 Don't introduce clues just to have clues. Tie them to a plan you already have.
 

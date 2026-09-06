@@ -1,9 +1,14 @@
 # Playtesting
 
-`CLAUDE.md` is currently built entirely from research — what other people found,
-generalised. Nothing in it comes from watching *this* prompt fail. That is the
-highest-value evidence available and every session that goes unrecorded throws
-it away.
+`CLAUDE.md` was built entirely from research — what other people found,
+generalised — until September 2026, when two full ACKS transcripts were read
+against it and roughly half of it came out. That evidence is the highest-value
+input available and every session that goes unrecorded throws it away.
+
+The revision is recorded in `02-acks-two-session-review.md`, and
+`docs/integration.md` marks the rules it removed **cut**, with the observation
+that did it. A rule cut on evidence can be restored on evidence; a rule that
+quietly stops being followed cannot.
 
 ## Setting up a run
 

@@ -46,10 +46,10 @@ session is made of things happening, and what the player finds is a consequence
 of where they were standing.
 
 The same test applies to the world moving while the player dithers. Something
-happening is not a penalty for hesitating, and it should not be filed as one —
-if the only thing your plan does when they stall is squeeze them, the plan has
-taught itself that hesitation gets punished. Somebody else acting on their own
-want is enough, and it is allowed to help.
+happening is not a penalty for hesitating, and it should not be filed as one.
+If the only move your plan has when they stall is to squeeze them, then nobody
+in it wants anything on their own, and the cast is set dressing. Somebody else
+acting on their own want is enough, and it is allowed to help.
 
 **Keep a running list of secrets and clues** — ten or so loose facts that are
 true and not yet revealed, not yet assigned to any particular scene. They are

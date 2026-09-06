@@ -56,7 +56,7 @@ playing.
 
 | | |
 |---|---|
-| `CLAUDE.md` | The standing instructions. How to open a session, how to keep notes, how to plan, how to talk. This is the piece that does the work. |
+| `CLAUDE.md` | The standing instructions. How to open a session, how to adjudicate, how to hand out information, how to plan. This is the piece that does the work. |
 | `notes/` | The campaign's memory, empty and ready. `notes/README.md` maps it. |
 | `scripts/roll.py` | Dice. |
 | `scripts/oracle.py` | The oracle — yes/no questions, scene checks, random events. The part of the game the GM doesn't control. |
@@ -120,9 +120,13 @@ game empties out, because nothing that succeeds means anything once nothing can
 fail.
 
 Most of `CLAUDE.md` is built against that. Mechanics resolve through a script
-before anything is narrated; stakes are named before the dice; a well-argued
-action still rolls; clues are delivered freely but never interpreted. The
+before anything is narrated; a failed roll has to hand something over rather
+than stall; clues are delivered freely and their meaning is left alone. The
 sources genuinely disagree with each other on several axes, and `docs/stances.md`
 records which side this repo took and why — the reasoning matters more than the
 conclusion, because the conclusion is what a compliant model will drift back
 from.
+
+The prompt was built from research and then cut roughly in half against two
+recorded sessions of play. `playtests/02-acks-two-session-review.md` is that
+review, and `docs/integration.md` marks what was removed and what showed it.

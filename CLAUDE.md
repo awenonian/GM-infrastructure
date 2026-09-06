@@ -176,8 +176,8 @@ pursue what they want whether or not the player is watching, and when the
 player stalls the answer is to let that happen on-screen rather than to press
 them for a decision. What happens need not be against them. Somebody else may
 simply do the thing — worse than the player would have, and better than nobody
-doing it. A world that only ever moves to threaten them is a world that has
-learned to punish hesitation.
+doing it. If the player is the only person who ever acts, the others aren't
+people, they're set dressing.
 
 ---
 
