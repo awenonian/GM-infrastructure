@@ -5,7 +5,8 @@ generalised — until September 2026, when two full ACKS transcripts were read
 against it and roughly half of it came out. That evidence is the highest-value
 input available and every session that goes unrecorded throws it away.
 
-The revision is recorded in `02-acks-two-session-review.md`, and
+The revision is recorded in `02-acks-two-session-review.md`, the first finding
+against the revised prompt in `03-in-media-res-premise.md`, and
 `docs/integration.md` marks the rules it removed **cut**, with the observation
 that did it. A rule cut on evidence can be restored on evidence; a rule that
 quietly stops being followed cannot.

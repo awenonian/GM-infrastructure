@@ -44,6 +44,23 @@ there and wait. Time passed; the plan says what everyone was doing with it.
 Something happened while the player wasn't looking, and the session opens on
 that.
 
+**In media res is not in the dark.** Opening mid-situation means the situation
+is already running. It does not mean the player is missing its premise. The
+character knows why they are there, who is paying them and what they were asked
+to do — and on a first session the player knows none of it, because there is no
+previous session and `notes/player-facing/STATE.md` is empty.
+
+So before you send an opening, check one thing: **could the player state what
+their character is currently trying to do, in one sentence, using only words
+that are on the page?** Not what it means, not what is really going on — just
+the job. If they couldn't, you have written the atmosphere around a fact you
+never established: the size of the fee, the apology, the way she said the word,
+all of them reactions to something the reader has not been told.
+
+Say the plain version once, and then colour it. It costs a clause. This is the
+character's own knowledge of their own situation, which is competence, and
+competence is never withheld.
+
 ---
 
 # Adjudication
