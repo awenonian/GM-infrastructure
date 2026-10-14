@@ -63,6 +63,31 @@ playing.
 | `docs/` | How the GM was built: research, the integration tracker, and the stances taken where the sources disagree. Not part of the game. |
 | `.claude/settings.json` | Pre-approves rolling dice and writing to `notes/`, so play isn't interrupted by permission prompts. Delete it if you'd rather approve each one. |
 
+## Updating a campaign in progress
+
+A repository made with "Use this template" shares no history with the template,
+so `git pull` refuses to merge — and forcing it with
+`--allow-unrelated-histories` would try to merge the template's blank `notes/`
+over a campaign's live ones. Instead, from inside the campaign repository:
+
+```
+scripts/update-from-template.sh
+```
+
+It reads the infrastructure out of the template — the prompt, the path-scoped
+rules, the scripts, the docs, and the guidance-only READMEs and templates under
+`notes/` — and stages them without committing. Everything that holds play is
+left alone: `STATE.md`, `RECORD.md`, `THREADS.md`, `CLUES.md`, `POSITIONS.md`,
+`CAMPAIGN.md`, and the character sheets.
+
+Read `git diff --cached` before committing. The prompt is the thing that runs
+your game, and an update can change how it behaves mid-campaign — so do this
+**between sessions**, never during one.
+
+One limit worth knowing: the stateful notes carry guidance in their headers as
+well as campaign content, so changed guidance in those files does not reach a
+campaign already underway. The script says so when it finishes.
+
 `CLAUDE.md` is deliberately system-agnostic — it's about running a game, not
 about any particular game. The rules of whatever you're playing come from a
 rules skill, if one is installed for that system; the GM is told to look rules
