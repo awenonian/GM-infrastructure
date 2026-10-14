@@ -1,7 +1,6 @@
 # Campaign
 
-Fill this in from the player's first message, so that no later session has to
-ask again.
+<!-- How to use this file: .claude/rules/notes.md, which loads when you open it. -->
 
 - **System:**
 - **Started from:** <character creation / an existing character / mid-campaign>
@@ -11,31 +10,23 @@ ask again.
 ## Lines and veils
 
 **Settled. The GM does not ask about this at the start of a session.** Lines
-stay out entirely; veils can exist but happen off-page.
+stay out entirely; veils can exist but happen off-page. "None recorded" is the
+setting, not an unanswered question.
 
 - **Lines:** none recorded
 - **Veils:** none recorded
 
-"None recorded" is the setting, not an unanswered question. The live safety
-mechanisms don't depend on anything being written here: the player can stop or
-rewind anything at any moment, and the GM checks in before and after a scene
-that goes somewhere heavy.
-
-To change this, edit the two lines above — the player owns this section, and the
-GM writes into it when they say something in play.
+This section is the player's. To change it, edit the two lines above; the GM
+writes into it when the player says something in play. The live safety
+mechanisms don't depend on anything being written here — the player can stop or
+rewind at any moment.
 
 ## Table commands
 
-For the player. Written here so that nobody has to be told during a session.
-
-- **"stop" or "skip that"** — said out of character at any point. Obeyed
-  immediately, no questions asked. To undo something that already happened, use
-  the client's own rollback; it's better at that than the GM is.
-- **`log: <anything>`** — appended verbatim to `playtests/current.md` and play
-  carries on. A note for whoever edits the GM's instructions later, not a
-  conversation. Delete `playtests/` if this campaign isn't a test.
+For the player: see **Table commands** in the repository's `README.md`. Short
+version — say *"stop"* or *"skip that"* out of character at any point, and
+`log: <anything>` to leave a note for whoever edits the GM's instructions later.
 
 ## The long shape
 
-What this campaign is about, and where it is pointed. Revise it when play
-demands; keep it consistent with everything already revealed.
+What this campaign is about, and where it is pointed.

@@ -84,9 +84,11 @@ Read `git diff --cached` before committing. The prompt is the thing that runs
 your game, and an update can change how it behaves mid-campaign — so do this
 **between sessions**, never during one.
 
-One limit worth knowing: the stateful notes carry guidance in their headers as
-well as campaign content, so changed guidance in those files does not reach a
-campaign already underway. The script says so when it finishes.
+All the guidance for the stateful notes lives in `.claude/rules/notes.md`,
+which the script *does* update, so changes to how those files work do reach a
+campaign in progress. What can't be delivered is their *structure* — a new
+table column or a new section won't appear in a file you already have. The
+script says so when it finishes.
 
 `CLAUDE.md` is deliberately system-agnostic — it's about running a game, not
 about any particular game. The rules of whatever you're playing come from a

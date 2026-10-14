@@ -86,6 +86,20 @@ it will only appear in repositories created after the change. The same applies
 in reverse: a file under `notes/` that is pure guidance can join the list, and
 one that will hold play must not.
 
+**Guidance for a note file goes in `.claude/rules/notes.md`, never in the note
+file itself.** The files under `notes/` hold campaign content, so a campaign in
+progress can never receive an updated copy of one — but it can receive an
+updated copy of the rule, which loads whenever any notes file is opened. Adding
+an explanation back into `STATE.md` or `CLUES.md` because it would be handy to
+see it there is how this decays: it strands that explanation in every existing
+campaign. The note files carry headings and table columns, which give the
+content shape, and nothing else.
+
+The one deliberate exception is `CAMPAIGN.md`'s lines-and-veils and table-command
+text, which is addressed to the **player** rather than to the GM. They own that
+section and need to be able to read it where they are already looking. It is
+near-static, and the cost of it being undeliverable is accepted.
+
 **`notes/` stays empty of play.** This repository is a GitHub template, so the
 files in `notes/` are the starting state of every campaign made from it. If a
 campaign's content lands in one, it becomes someone else's opening canon.

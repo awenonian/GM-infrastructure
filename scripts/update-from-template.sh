@@ -96,12 +96,12 @@ Nothing is committed yet. Read the diff before you do:
 
     git diff --cached
 
-Two things worth checking by hand, because this script cannot do them:
+All guidance for the stateful notes lives in .claude/rules/notes.md, which IS
+updated by this script, so a change to how those files work reaches you here.
+What this script cannot do is change their structure: if an update added a
+column to a table or a new section, your existing file won't have it. The diff
+to .claude/rules/notes.md will say so.
 
-  * CLUES.md, and the other stateful notes, carry guidance prose in their
-    headers as well as campaign content. Updated guidance in those headers does
-    not reach a campaign in progress. If a template change touched one, port it
-    by hand.
-  * Your CAMPAIGN.md holds house rules and lines and veils. It is never
-    overwritten, but a prompt change may assume something new of it.
+Your CAMPAIGN.md is never overwritten — it holds your house rules and your
+lines and veils — but a prompt change may assume something new of it.
 EOF

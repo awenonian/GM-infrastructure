@@ -270,6 +270,28 @@ cut in September 2026 — not because the reasoning was wrong, but because none
 of them showed a play effect worth their lines, and `rules/notes.md` still
 defines what they refer to. The principle stands; those three didn't earn it.
 
+### The same question, asked of the note files
+
+September 2026. The files under `notes/` used to carry their own instructions —
+what a clock is for, what the clue statuses mean, how to write a VOICE sample —
+sitting above the campaign content in each file. By stance 6's test that looks
+right: the guidance fires exactly when that file is open.
+
+It was still wrong, for a reason the stance didn't consider. A campaign is made
+from this repository as a GitHub template, so it shares no git history with it
+and receives updates by having infrastructure paths copied over. A file holding
+play can never be copied over. So guidance living in `STATE.md` or `CLUES.md`
+was guidance that could be written once and never corrected in any campaign
+already running — and the reactive-correction rule added to `CLUES.md` that
+month was exactly such a change, undeliverable to the one campaign that needed
+it.
+
+All of it now lives in `.claude/rules/notes.md`, which is path-scoped to
+`notes/**` and so still loads whenever a note file is opened. The note files
+keep their headings and table columns and nothing else. The stance's test was
+right about *when* a rule should fire; it needed a second question about
+**whether the file it lives in can ever be updated.**
+
 **The failure this guards against** is moving something out because the file is
 long, and discovering three sessions later that it only ever mattered at a
 moment when nothing was open. If you cannot name the file whose reading should
