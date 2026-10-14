@@ -21,9 +21,9 @@ last week reads the notes and picks up where you left off.
 
 3. **Session zero happens first.** A fresh copy carries a
    `notes/gm/plans/SESSION-ZERO.md`, and the GM opens by reading it: character,
-   connections, what you actually want to be playing, and lines and veils, all
-   settled out in the open before any of it is prepped. It deletes itself when
-   you're done, and the campaign starts.
+   connections, and what you actually want to be playing, all settled out in the
+   open before any of it is prepped. It deletes itself when you're done, and the
+   campaign starts.
 
 4. **Play.** From the second session on, open with a short recap of where you
    think you left off — off the cuff is fine, lossy is expected. That recap is
@@ -44,8 +44,11 @@ negotiating. To undo something that already happened, use your client's
 rollback; the GM won't try to duplicate it, and won't advertise either one at
 you.
 
-Lines and veils live in `notes/gm/plans/CAMPAIGN.md` and are set by editing that
-file, not negotiated at the top of a session.
+Lines and veils live in `notes/player-owned/LINES-AND-VEILS.md` and are set by
+editing that file, not negotiated at the top of a session. They ship with the
+template and carry into every campaign made from it, so it's worth filling in
+once — **including in your own copy of this repo, if you're making campaigns
+from it.** Session zero reads them before it does anything else.
 
 **`log:` followed by anything**, out of character, at any point:
 

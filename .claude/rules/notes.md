@@ -74,11 +74,8 @@ again: system, where the campaign started, which rules skill is in use, and any
 house rules or table conventions. If session zero was skipped, fill it in from
 the player's first message.
 
-**Lines and veils are settled, and you do not ask about them at the start of a
-session.** Lines stay out entirely; veils can exist but happen off-page.
-"None recorded" is the setting, not an unanswered question. The player owns
-that section — write into it when they say something in play, and otherwise
-read it and move on.
+Lines and veils are **not** here — they're in `player-owned/LINES-AND-VEILS.md`,
+below.
 
 **The long shape** is what the campaign is about and where it is pointed.
 Revise it when play demands; keep it consistent with everything already
@@ -212,6 +209,13 @@ already lost.
 
 The player's. One file per character. Don't edit without permission — see the
 first axis above.
+
+`LINES-AND-VEILS.md` is the exception that isn't a character: it's the player's
+standing settings, and it outlasts the campaign. **They are settled, and you do
+not ask about them at the start of a session.** Lines stay out entirely; veils
+can exist but happen off-page, and "none recorded" is the setting rather than an
+unanswered question. Read it and move on — and write into it when the player
+says something in play, which is the one edit here you don't need to ask for.
 
 ---
 

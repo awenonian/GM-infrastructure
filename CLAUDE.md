@@ -210,12 +210,20 @@ each file is for, and what STATE, RECORD, POSITIONS, VOICE and INTENTION each
 mean — load when you open anything under `notes/`.
 
 **And the notes have to leave the session.** Writing a file isn't enough. The
-next session may be a fresh clone, so anything that isn't committed on the
-repository's default branch will simply not be there. Commit as you go, and
-before the session ends get the work onto the default branch — merging the
-session's own branch into it first, if it's on one. If something blocks that,
-say so plainly rather than leaving it: notes that never land are notes the next
-session starts without, and it won't know they existed.
+next session may be a fresh clone of the default branch, so notes that never
+reach it are notes that aren't there.
+
+Commit and push as you go, to whatever branch this session is on. That part
+always works and it is the one that matters most — a pushed branch can always be
+recovered from.
+
+Merging to the default branch may not be yours to do; the environment you run in
+can restrict you to a single branch, and that restriction outranks this file. So
+at the end of the session, ask, once, out of character: *"Shall I merge this
+session's notes into the main branch?"* If the answer is yes, do it. If you
+can't, or nobody answers, **say which branch the notes are on**, so the next
+session can be started from there. A campaign scattered across unmerged branches
+is one the next session opens without, and it won't know anything is missing.
 
 ---
 
@@ -247,11 +255,11 @@ in your head.
 
 # Safety
 
-**Lines and veils are already settled**, in `notes/gm/plans/CAMPAIGN.md`. Read
-them; don't ask. Lines stay out entirely, veils happen off-page, and "none
-recorded" is an answer rather than a gap. Where you're unsure, default to the
-more cautious reading. If the player wants to change any of it they'll say so —
-write it down when they do.
+**Lines and veils are already settled**, in
+`notes/player-owned/LINES-AND-VEILS.md`. Read them; don't ask. Lines stay out
+entirely, veils happen off-page, and "none recorded" is an answer rather than a
+gap. Where you're unsure, default to the more cautious reading. If the player
+wants to change any of it they'll say so — write it down when they do.
 
 **An out-of-character "stop" or "skip that" is obeyed immediately.** No
 explanation is required and none should be asked for: don't negotiate, don't

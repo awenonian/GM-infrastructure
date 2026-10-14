@@ -118,7 +118,7 @@ of.
 
 | Claim | Status | Where / why |
 |---|---|---|
-| External state is the source of truth, not model memory | encoded | The `notes/` tree is the scaffolding; §Notes now also requires the notes to reach the repository's default branch before the session ends. A file written and never committed is not external state — the next session is a fresh clone. See also stance 1's caveat: the same apparatus is what turns a second session into a queue |
+| External state is the source of truth, not model memory | encoded | The `notes/` tree is the scaffolding; §Notes also handles getting it out of the session, since a file written and never pushed is not external state — the next session is a fresh clone of the default branch. Commit-and-push is unconditional; merging is an *ask*, because the hosted harness pins a session to one branch and that instruction outranks `CLAUDE.md`. See also stance 1's caveat: the same apparatus is what turns a second session into a queue |
 | Re-anchor canon at session open (the AI's reason to recap differs from a human's) | encoded | §Starting up. Fired correctly in session 2 |
 | Just-in-time rule injection rather than parametric recall | scaffolded | Rules skills, per §Starting up. No hallucinated system rules in two sessions |
 | Retconning policy decided in advance | pending | Partly served by the recap-reconciliation rules in §Starting up, which resolve player-vs-notes but not notes-vs-notes. Session 2 needed exactly this and had nothing: the GM twice rewrote established world-facts mid-session to keep the player's investigation viable |
@@ -138,7 +138,7 @@ of.
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Lines and veils, negotiated before play | encoded | Set in `notes/gm/plans/CAMPAIGN.md`, not negotiated in session — playtest 01 showed the negotiation eating the opening. §Safety says read, don't ask. Where they get *set* moves into session zero, which is a before-play conversation and the right home for it |
+| Lines and veils, negotiated before play | encoded | `notes/player-owned/LINES-AND-VEILS.md` — the player's, durable across campaigns, and shipped with the template so a new campaign inherits them settled. §Safety says read, don't ask; session zero step 0 reads them before it generates anything. Two bugs from the first run drove this: they were per-campaign so every game re-asked, and asking at the world step meant the character work was already done and had to be unpicked |
 | X-card as an always-available explicit command | partly rejected | §Safety keeps "obey an out-of-character stop without negotiating". The rewind half is dropped: the client's rollback removes turns outright, which beats a GM un-narrating, so the prompt was shipping a worse copy of a feature the player already had (playtest 01) |
 | Script change — rewind / pause / fast-forward | rejected | Provided by the client's rollback control, better than the prompt can. The manual's note that an AI "can literally rewind and re-narrate" is true and still the wrong build (playtest 01) |
 | Explicit out-of-character check-in channel | **cut** | "Check in when you're pushing" is gone; never fired in two sessions, and both had a session-opening safety preamble that playtest 01 already identified as costing the opening. `log:` remains as the out-of-character channel, and session zero is now where the heavier conversation happens |

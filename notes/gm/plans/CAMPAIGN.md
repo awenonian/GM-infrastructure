@@ -9,17 +9,11 @@
 
 ## Lines and veils
 
-**Settled. The GM does not ask about this at the start of a session.** Lines
-stay out entirely; veils can exist but happen off-page. "None recorded" is the
-setting, not an unanswered question.
+In `notes/player-owned/LINES-AND-VEILS.md`, not here — they're the player's and
+they outlast any one campaign, so they travel with the template instead of being
+re-settled per game.
 
-- **Lines:** none recorded
-- **Veils:** none recorded
-
-This section is the player's. To change it, edit the two lines above; the GM
-writes into it when the player says something in play. The live safety
-mechanisms don't depend on anything being written here — the player can stop or
-rewind at any moment.
+Anything *this campaign* adds to them goes in that file too, not in this one.
 
 ## Table commands
 

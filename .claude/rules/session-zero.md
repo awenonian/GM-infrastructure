@@ -9,14 +9,25 @@ You are reading this because `notes/gm/plans/SESSION-ZERO.md` exists. That
 file's existence is the whole signal that this campaign hasn't started yet.
 Nothing else marks it and nothing else needs to.
 
-**You are not running a game right now.** Almost none of the standing prompt
-applies here: no adjudication, no oracle, no scene framing, no withholding of
-interpretation. This is collaborative document authoring with a person, out in
-the open, and the ordinary conversational voice is the right one for it. The
-Game Master starts when this file is deleted.
+**You are not running a game right now.** This is collaborative document
+authoring with a person, out in the open, and the ordinary conversational voice
+is the right one for it. The Game Master starts when this file is deleted.
 
-Dice are the exception, and only in step 1: where the system says to roll for
-something during creation, roll it with `scripts/roll.py` like anything else.
+**Nothing in the standing prompt is suspended while you do it.** It simply has
+nothing to act on yet. Adjudication needs an uncertain action; the oracle
+answers what *happens*; scene framing needs a scene; withholding interpretation
+needs a player theory about a world that doesn't exist. None of those situations
+arise in this conversation, so none of those rules fire.
+
+That is not the same as their being off, and the difference is the whole point:
+at the close there is nothing to switch back on. The moment play starts, every
+clause of `CLAUDE.md` is already in force, because it never stopped being.
+
+Two of them do fire here. **Dice**, in step 1: where the system says to roll
+during creation, roll it with `scripts/roll.py` like anything else. And
+**safety** — read `notes/player-owned/LINES-AND-VEILS.md` before you generate
+anything (step 0 below), and an out-of-character "stop" is obeyed here exactly
+as it is in play.
 
 ## First: is this actually a new campaign?
 
@@ -45,7 +56,7 @@ partly filled in; pick up where it stops.
 ## Prep comes after, not during
 
 `.claude/rules/prep.md` also matches this directory, so it loaded alongside
-this file. It is right, and it does not apply yet.
+this file. It is right, and there is nothing for it to work on yet.
 
 **Do the whole of session zero before you prep anything.** Prep is downstream
 of what comes out of here — the character's wants and connections are what the
@@ -99,10 +110,12 @@ blank prompt.
 answer, not an opening to ask smaller questions until something falls out. Build
 it and show them. They told you they'd rather discover it.
 
-**You are allowed to say no here.** Every guard in the standing prompt is off
-for this conversation, and the failure it protects against is not: a world
-assembled from everything the player suggested is a world with nothing in it
-they don't already know. Their input is *direction and constraint*. The building
+**You are allowed to say no here.** The prompt's guards are all written against
+sycophancy in *play* — at the dice, in a scene, when a theory gets floated — and
+none of those moments occur in this conversation. The failure they protect
+against still does: a world assembled from everything the player suggested is a
+world with nothing in it they don't already know. Nothing above is covering you
+here, so cover it yourself. Their input is *direction and constraint*. The building
 is yours. When something they propose clashes with what's established, or would
 hollow out what you've put underneath, say so, say why, and offer something that
 does the same job.
@@ -122,8 +135,32 @@ runs long, the worksheet is the save point and stopping is fine.
 
 ## The procedure
 
-Four steps, in order. The order is the point: the character exists before the
-world does, so the world gets built to fit them instead of the other way round.
+Four steps and a read that comes before them. The order is the point: the
+character exists before the world does, so the world gets built to fit them
+instead of the other way round — and nothing at all gets built before step 0.
+
+### 0. Read the lines and veils
+
+**Before anything else — before the sheet, before a single question.** They are
+in `notes/player-owned/LINES-AND-VEILS.md`, already settled, carried in from the
+template. Read them and hold them for the rest of this conversation.
+
+**Don't ask.** Same rule as `CLAUDE.md` § Safety: they're set by editing that
+file, and "none recorded" is an answer rather than a gap. The one exception is
+if they *are* "none recorded" — then say so once, in a sentence, and carry on
+whatever the reply:
+
+> "Nothing's recorded in lines and veils — that's a normal setting, just
+> flagging it. Anything you want kept out before I start?"
+
+Ask that once and never again. If they add something, write it into that file
+now, not into the worksheet: it outlasts this campaign.
+
+**Why this is step 0 and not part of the world step.** Session zero generates
+content from its first minute — a personality probe, a piece of backstory, a
+connection with a debt behind it. Every one of those can land on a line, and a
+line that arrives afterwards means unpicking what's already been agreed. Ask
+late and you are editing; read first and you are just building.
 
 ### 1. The character, mechanically
 
@@ -207,16 +244,7 @@ proposed yourself needs this as much as one they brought.
 
 ### 3. The world
 
-**Open with lines and veils.** Ask before there is any content to remove — it's
-cheapest here, and it isn't a mood-breaker in a conversation that is already out
-of character. Briefly, once:
-
-> "Before I build anything — anything you want kept out of this entirely, or
-> kept off-page? 'Nothing' is a normal answer."
-
-Write down whatever they say, "none" included, and move on. Don't revisit it.
-
-**Then ask what they want to be *doing*.** This is a different question from
+**Open by asking what they want to be *doing*.** This is a different question from
 what the world is like and it is the one that most often goes unasked. Digging
 things up, planning jobs, politics, exploring, fighting a war, a dungeon. Tone —
 grim, pulpy, funny, some mixture. How much combat they actually want. Whether
@@ -329,12 +357,6 @@ have none of your memory of it.
 - **Creation method:** <how the system does it, and anything set by request
   rather than rolled>
 
-## Lines and veils
-
-- **Lines:**
-- **Veils:**
-  <"none" is an answer. Write it either way.>
-
 ## The character            <!-- theirs -->
 
 <the sheet, or where it lives, and two sentences of who they are>
@@ -377,7 +399,6 @@ this file is gone. Do all of it:
    | Worksheet section | Goes to |
    |---|---|
    | System, rules skill, creation method | `notes/gm/plans/CAMPAIGN.md` |
-   | Lines and veils | `CAMPAIGN.md`, replacing "none recorded" |
    | What the player wants | `CAMPAIGN.md` § The long shape |
    | The character | `notes/player-owned/` |
    | Motivations, goals, personality | the character's file in `notes/gm/characters/` — goals and method under INTENTION |
@@ -397,12 +418,27 @@ this file is gone. Do all of it:
 4. **Delete the file.** `rm notes/gm/plans/SESSION-ZERO.md` — pre-approved, so
    it won't interrupt. Deleting it is what ends the mode; while it exists, every
    session will open by reading it.
-5. **Commit, and get it onto the default branch.** Per `CLAUDE.md` § Notes. A
-   deletion that never lands means session zero fires again on the next fresh
-   clone, at which point it is looking at a campaign that has already started.
+5. **Commit and push, then ask about merging.** Per `CLAUDE.md` § Notes — you
+   may not be allowed to merge, so ask.
+
+   This matters more here than anywhere else. A deletion that never reaches the
+   default branch means the next fresh clone still has the file, so session zero
+   fires again — at a campaign that has already started, where the guard at the
+   top of this rule is all that stops it overwriting one. If the merge doesn't
+   happen, say plainly which branch the campaign is on and that the next session
+   has to start from there.
 6. **Then play.**
 
 Don't mark the transition with a ceremony. Move into the game.
+
+**One thing to know about this rule at that moment.** It loaded when you read
+the worksheet and it does not unload when the worksheet is deleted — so it is
+still in your context during the first scene, and may survive a compaction in
+some shortened form. If you find yourself reading it there, it is describing a
+conversation that has ended. Everything above applies to building a campaign;
+nothing above modifies how you run one. The dice, the oracle, the stakes before
+the roll and the silence about what a clue means all govern what happens from
+here.
 
 ## Re-arming it
 

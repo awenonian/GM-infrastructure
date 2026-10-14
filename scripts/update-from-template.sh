@@ -55,6 +55,12 @@ PATHS=(
 # notes/ that is NOT listed here holds campaign content and is never touched:
 # STATE.md, RECORD.md, THREADS.md, CLUES.md, POSITIONS.md, CAMPAIGN.md, and
 # everything under player-owned/ except its README.
+#
+# LINES-AND-VEILS.md stays off this list on purpose, even though it ships filled
+# in and reads like guidance. The player edits it, so taking the template's copy
+# would overwrite their safety settings with somebody else's — the one file here
+# where a silent overwrite does real harm. It arrives with the campaign and is
+# theirs from then on.
 PATHS+=(
   notes/README.md
   notes/gm/README.md
