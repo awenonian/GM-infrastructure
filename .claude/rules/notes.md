@@ -69,9 +69,10 @@ the whole session is still in your head.
 
 ## `gm/plans/CAMPAIGN.md`
 
-Fill it in from the player's first message, so that no later session has to ask
+Filled in at the close of session zero, so that no later session has to ask
 again: system, where the campaign started, which rules skill is in use, and any
-house rules or table conventions.
+house rules or table conventions. If session zero was skipped, fill it in from
+the player's first message.
 
 **Lines and veils are settled, and you do not ask about them at the start of a
 session.** Lines stay out entirely; veils can exist but happen off-page.

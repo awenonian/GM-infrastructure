@@ -86,8 +86,8 @@ of.
 | Clocks as a pacing and consequence device | scaffolded | `notes/gm/STATE.md` clocks table |
 | End sessions on a hook or unresolved beat | **cut** | Untested. Both sessions ended by player request, not by GM framing |
 | Hope/fear beat oscillation (Laws) | pending | Wants a tracking mechanism to be more than a slogan |
-| Infer and adapt to the player's evident preferences (Laws' player types) | pending | Likely superseded by the planned session zero, which asks the player to state goals and motivations directly rather than having the GM infer them |
-| Reading the room / body language / physical staging | rejected | Doesn't transfer; the manual flags this itself |
+| Infer and adapt to the player's evident preferences (Laws' player types) | partly encoded | Session zero step 3 asks outright what they want to be *doing* — tone, appetite for combat, kind of play — and step 2's personality probe reads what the player enjoys deciding rather than what they said about the character. Both land in `CAMPAIGN.md`. Inferring *during* play, and adapting to it, is still pending |
+| Reading the room / body language / physical staging | rejected | Doesn't transfer; the manual flags this itself. There is no longer a substitute in §Safety — the scene-triggered check-in was cut, see Safety below |
 
 ## Adjudication (manual: §d)
 
@@ -118,7 +118,7 @@ of.
 
 | Claim | Status | Where / why |
 |---|---|---|
-| External state is the source of truth, not model memory | scaffolded | The whole `notes/` tree is this. Working, and see stance 1's new caveat: the same apparatus is what turns a second session into a queue |
+| External state is the source of truth, not model memory | encoded | The `notes/` tree is the scaffolding; §Notes now also requires the notes to reach the repository's default branch before the session ends. A file written and never committed is not external state — the next session is a fresh clone. See also stance 1's caveat: the same apparatus is what turns a second session into a queue |
 | Re-anchor canon at session open (the AI's reason to recap differs from a human's) | encoded | §Starting up. Fired correctly in session 2 |
 | Just-in-time rule injection rather than parametric recall | scaffolded | Rules skills, per §Starting up. No hallucinated system rules in two sessions |
 | Retconning policy decided in advance | pending | Partly served by the recap-reconciliation rules in §Starting up, which resolve player-vs-notes but not notes-vs-notes. Session 2 needed exactly this and had nothing: the GM twice rewrote established world-facts mid-session to keep the player's investigation viable |
@@ -138,10 +138,10 @@ of.
 
 | Claim | Status | Where / why |
 |---|---|---|
-| Lines and veils, negotiated before play | encoded | Set in `notes/gm/plans/CAMPAIGN.md`, not negotiated in session — playtest 01 showed the negotiation eating the opening. §Safety says read, don't ask |
-| X-card as an always-available explicit command | partly rejected | §Safety keeps "obey an out-of-character stop without negotiating". The rewind half is dropped: the client's rollback removes turns outright (playtest 01) |
-| Script change — rewind / pause / fast-forward | rejected | Provided by the client's rollback control, better than the prompt can (playtest 01) |
-| Explicit out-of-character check-in channel | **cut** | "Check in when you're pushing" is gone; never fired in two sessions, and both had a session-opening safety preamble that playtest 01 already identified as costing the opening. `log:` remains as the out-of-character channel |
+| Lines and veils, negotiated before play | encoded | Set in `notes/gm/plans/CAMPAIGN.md`, not negotiated in session — playtest 01 showed the negotiation eating the opening. §Safety says read, don't ask. Where they get *set* moves into session zero, which is a before-play conversation and the right home for it |
+| X-card as an always-available explicit command | partly rejected | §Safety keeps "obey an out-of-character stop without negotiating". The rewind half is dropped: the client's rollback removes turns outright, which beats a GM un-narrating, so the prompt was shipping a worse copy of a feature the player already had (playtest 01) |
+| Script change — rewind / pause / fast-forward | rejected | Provided by the client's rollback control, better than the prompt can. The manual's note that an AI "can literally rewind and re-narrate" is true and still the wrong build (playtest 01) |
+| Explicit out-of-character check-in channel | **cut** | "Check in when you're pushing" is gone; never fired in two sessions, and both had a session-opening safety preamble that playtest 01 already identified as costing the opening. `log:` remains as the out-of-character channel, and session zero is now where the heavier conversation happens |
 
 ## Architecture (manual: Stage 6)
 
@@ -152,6 +152,7 @@ of.
 | At most one narrow, well-scoped adjudication check | encoded | `roll.py` and `oracle.py` are that check, and they aren't LLMs |
 | Front-load the most-violated rules; buried rules are lost to recency | encoded | §Adjudication still sits immediately after startup. The rationale essay that used to open it is gone; the position is the encoding |
 | A versioned system-prompt "contract" | pending | Nothing versions `CLAUDE.md` beyond git history |
+| Once-per-campaign setup shouldn't be paid for every session | encoded | `.claude/rules/session-zero.md`, path-scoped to a `notes/gm/plans/SESSION-ZERO.md` that deletes itself at the close. Not from the manual — see `ideas.md` for why a self-deleting trigger file beat a skill, and stance 7 for the appetite/circumstance split it runs on |
 | Treat every observed rule-break as a new prompt clause | encoded | `playtests/` and the `log:` command; protocol in `docs/playtesting.md`. Now actually exercised: this revision is the first built from transcripts rather than from research |
 
 ## From play, not from the manual
@@ -170,3 +171,4 @@ rows in this file because they are the only ones tested against this prompt.
 | Open on something having moved | §Starting up | The same finding, at the session boundary |
 | In media res is not in the dark | §Starting up | Playtest 03. A first session opened on the atmosphere around a job — the fee, the apology, how she said "supplier" — without ever saying what the job was. The player's and the character's knowledge diverge at exactly one moment, the opening of a first session, and *report observation, withhold interpretation* pushes the wrong way there. Carries a pre-send check: could the player state what their character is trying to do, in one sentence, from words on the page |
 | The world moves, and moving is not punishment | §The world and the people in it | The plan template filed the world acting under "Pressure, if he stalls." The player's correction: something happening when you hesitate is fine and may help — the failure is a cast that only ever moves to threaten, which is a cast of set dressing |
+

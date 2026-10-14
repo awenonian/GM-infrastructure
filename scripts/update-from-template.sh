@@ -78,6 +78,20 @@ for p in "${PATHS[@]}"; do
   fi
 done
 
+# Files that must NEVER reach a campaign already underway, whatever else
+# changes. notes/gm/plans/SESSION-ZERO.md is a trigger: the GM treats its
+# existence as "this campaign has not started yet" and runs the whole session-
+# zero procedure, overwriting CAMPAIGN.md. Shipping it to a live campaign would
+# restart setup on a game in progress.
+NEVER=(notes/gm/plans/SESSION-ZERO.md)
+for n in "${NEVER[@]}"; do
+  for p in "${EXISTING[@]}"; do
+    case "$n" in
+      "$p"|"$p"/*) echo "Refusing to update: $p would deliver $n, which must never reach a running campaign." >&2; exit 1 ;;
+    esac
+  done
+done
+
 [ ${#EXISTING[@]} -gt 0 ] || { echo "Nothing to update." >&2; exit 1; }
 
 git checkout "$REMOTE/$BRANCH" -- "${EXISTING[@]}"
