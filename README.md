@@ -57,6 +57,27 @@ later, and it's the only way the prompt gets improved from evidence rather than
 from theory. `playtests/` explains the rest; delete it from a copy that's only
 playing.
 
+## How the GM reads what you type
+
+None of this is required; the GM is built to be safe when you don't bother with
+it. But when you do use it, it isn't guessing:
+
+| You type | It means |
+|---|---|
+| `"Like this."` | your character says it, in those words |
+| `I'll tell him about the job` | your character says it, and the GM writes the words |
+| `*Like this.*` | interior thought — nobody hears it |
+| plain prose | action and description |
+| `(Like this.)` | out of character; the GM answers as itself |
+
+The one worth knowing: **if your turn has quotes in it, the GM takes the quoted
+text as all of what was said out loud.** And where it can't tell whether
+something was spoken, it assumes it wasn't — a thought mistaken for speech
+needs a rollback to undo, speech mistaken for thought needs one sentence.
+
+In-world text — a letter, an inscription, a sign — comes back in a blockquote,
+so you can tell the thing itself from the GM describing it.
+
 ## What's here
 
 | | |
